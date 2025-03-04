@@ -1,0 +1,11 @@
+node_modules
+.dockerignore
+Dockerfile
+dist
+.nuxthub
+.git
+.gitignore
+.idea
+.vscode
+*.log
+.env
