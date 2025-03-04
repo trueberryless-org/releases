@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: releases
+  namespace: releases
+spec:
+  secretName: releases
+  issuerRef:
+    name: acme-issuer
+    kind: ClusterIssuer
+  dnsNames:
+    - "releases.trueberryless.org"

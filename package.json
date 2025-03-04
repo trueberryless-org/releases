@@ -1,0 +1,21 @@
+{
+  "name": "releases-monorepo",
+  "homepage": "https://github.com/trueberryless-org/releases",
+  "bugs": {
+    "url": "https://github.com/trueberryless-org/releases/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trueberryless-org/releases.git"
+  },
+  "license": "MIT",
+  "author": "trueberryless <trueberryless@gmail.com> (https://trueberryless.org)",
+  "scripts": {
+    "version": "pnpm changeset version && pnpm i --no-frozen-lockfile"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.11"
+  },
+  "packageManager": "pnpm@9.6.0"
+}

@@ -13,4 +13,6 @@ You can fork it to create your own version, or [use this template to deploy a pa
 
 ## License
 
-MIT
+Licensed under the MIT license, Copyright © trueberryless.
+
+See [LICENSE](/LICENSE) for more information.

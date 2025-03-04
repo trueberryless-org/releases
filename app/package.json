@@ -1,16 +1,18 @@
 {
-  "type": "module",
   "private": true,
-  "packageManager": "pnpm@9.15.0",
+  "type": "module",
   "scripts": {
     "build": "nuxi build",
     "dev": "nuxi dev",
     "generate": "nuxi generate",
+    "lint": "eslint .",
     "prepare": "nuxi prepare",
     "start": "node dist/_worker.js",
     "start:generate": "npx serve .output/public",
-    "lint": "eslint .",
     "typecheck": "vue-tsc --noEmit"
+  },
+  "resolutions": {
+    "vite": "^6.0.3"
   },
   "dependencies": {
     "octokit": "^4.0.2"
@@ -39,7 +41,5 @@
     "vue-tsc": "^2.1.10",
     "wrangler": "^3.95.0"
   },
-  "resolutions": {
-    "vite": "^6.0.3"
-  }
+  "packageManager": "pnpm@9.6.0"
 }
