@@ -1,0 +1,5 @@
+---
+"releases": minor
+---
+
+Initial release
