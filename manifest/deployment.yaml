@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: releases
+  namespace: releases
+  labels:
+    app: releases
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: releases
+  template:
+    metadata:
+      labels:
+        app: releases
+    spec:
+      containers:
+        - name: releases
+          image: "trueberryless/releases"
+          imagePullPolicy: Always
