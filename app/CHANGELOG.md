@@ -1,5 +1,11 @@
 # releases
 
+## 0.2.0
+
+### Minor Changes
+
+- [`3b16eb0`](https://github.com/trueberryless-org/releases/commit/3b16eb0161c2df7e925454b820ddeba647417b58) Thanks [@trueberryless](https://github.com/trueberryless)! - Add GitHub Data Storage to store releases
+
 ## 0.1.2
 
 ### Patch Changes
