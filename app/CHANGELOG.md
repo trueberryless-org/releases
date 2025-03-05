@@ -1,5 +1,11 @@
 # releases
 
+## 0.2.1
+
+### Patch Changes
+
+- [`0c37bda`](https://github.com/trueberryless-org/releases/commit/0c37bda6ebb8b8cf1029ae1486613c1d547480ab) Thanks [@trueberryless](https://github.com/trueberryless)! - Turn data lib into server API endpoint because Nuxt doesn't allow PATs on client-side, <3 Security!
+
 ## 0.2.0
 
 ### Minor Changes
