@@ -1,5 +1,11 @@
 # releases
 
+## 0.1.2
+
+### Patch Changes
+
+- [`dab6a53`](https://github.com/trueberryless-org/releases/commit/dab6a5398ced99e5ea6aa8aa30442e13f3f40432) Thanks [@trueberryless](https://github.com/trueberryless)! - Fix gh links and pfp
+
 ## 0.1.1
 
 ### Patch Changes
