@@ -1,3 +1,4 @@
+import { get, set } from "~~/libs/data";
 import type { ReleaseInfo } from "../../types";
 import { Octokit } from "octokit";
 
@@ -25,8 +26,14 @@ export default defineLazyEventHandler(async () => {
   });
 
   // The GitHub `/events` API only returns the latest 300 events (3 pages)
-  // Thus here we use KV to store the previous data to persist the history for a longer time
-  let infos: ReleaseInfo[] = [];
+  // Thus here we use Github to store the previous data to persist the history for a longer time
+  let infos: ReleaseInfo[] = (await get()) || [];
+
+  infos.forEach((item) => {
+    if (typeof item.created_at === "string")
+      item.created_at = +new Date(item.created_at);
+  });
+
   let lastUpdated = 0;
 
   async function getDataAtPage(page = 1): Promise<ReleaseInfo[]> {
@@ -116,6 +123,8 @@ export default defineLazyEventHandler(async () => {
       infos.reverse();
 
       if (infos.length > LIMIT) infos.slice(0, LIMIT);
+
+      await set(infos);
 
       return {
         infos,

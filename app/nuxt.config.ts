@@ -9,16 +9,12 @@ export default defineNuxtConfig({
   modules: ["@vueuse/nuxt", "@unocss/nuxt", "@nuxt/eslint"],
 
   runtimeConfig: {
-    githubToken: process.env.GITHUB_TOKEN,
+    githubToken: process.env.PAT_GITHUB_TOKEN_GET_RELEASES,
     public: {
       name,
       login,
       website,
     },
-  },
-
-  hub: {
-    kv: true,
   },
 
   experimental: {
