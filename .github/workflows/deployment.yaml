@@ -68,7 +68,7 @@ jobs:
         id: changesets
         with:
           version: pnpm run version
-          commit: "chore: release v[VERSION]"
+          commit: "chore: release"
           title: "[ci] release"
         env:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token}}

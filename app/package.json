@@ -1,9 +1,8 @@
 {
   "name": "releases",
-  "type": "module",
   "version": "0.1.2",
   "private": true,
-  "packageManager": "pnpm@9.6.0",
+  "type": "module",
   "scripts": {
     "build": "nuxi build",
     "dev": "nuxi dev",
@@ -13,6 +12,9 @@
     "start": "node .output/server/index.mjs",
     "start:generate": "npx serve .output/public",
     "typecheck": "vue-tsc --noEmit"
+  },
+  "resolutions": {
+    "vite": "^6.0.3"
   },
   "dependencies": {
     "octokit": "^4.0.2"
@@ -40,7 +42,5 @@
     "vue-tsc": "^2.1.10",
     "wrangler": "^3.95.0"
   },
-  "resolutions": {
-    "vite": "^6.0.3"
-  }
+  "packageManager": "pnpm@9.6.0"
 }
