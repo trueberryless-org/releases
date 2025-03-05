@@ -75,10 +75,10 @@ jobs:
 
       - name: Get published version
         run: |
-          VERSION=$(node -p "require('./package.json').version")
+          VERSION=$(node -p "require('./app/package.json').version")
           git checkout changeset-release/main
           git commit --amend -m "chore(release): publish v$VERSION" --no-edit
-          git push --force
+          git push origin changeset-release/main:changeset-release/main --force
 
   image-tag:
     name: Image Tag
