@@ -6,7 +6,7 @@ const website =
   process.env.WEBSITE_DOMAIN || "https://releases.trueberryless.org";
 
 export default defineNuxtConfig({
-  modules: ["@vueuse/nuxt", "@unocss/nuxt", "@nuxt/eslint", "@nuxthub/core"],
+  modules: ["@vueuse/nuxt", "@unocss/nuxt", "@nuxt/eslint"],
 
   runtimeConfig: {
     githubToken: process.env.GITHUB_TOKEN,
