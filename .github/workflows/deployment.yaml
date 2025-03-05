@@ -138,6 +138,9 @@ jobs:
         run: pnpm run build
         shell: bash
         working-directory: ./app
+        env:
+          PAT_GITHUB_TOKEN_GET_RELEASES: ${{ secrets.PAT_GITHUB_TOKEN_GET_RELEASES }}
+          PAT_GITHUB_TOKEN_WRITE_DATA: ${{ secrets.PAT_GITHUB_TOKEN_WRITE_DATA }}
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
