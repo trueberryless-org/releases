@@ -16,3 +16,5 @@ export const subLogosMatch = [
   [/^shiki-/i, "https://github.com/shikijs.png"],
   [/^slidev-/, "https://github.com/slidevjs.png"],
 ] as const;
+
+export const RELEASES_FILE_PATH = "app/.data/releases.json";

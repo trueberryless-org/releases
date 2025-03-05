@@ -1,48 +1,16 @@
-import type { ReleaseInfo } from "../types";
 import { Octokit } from "octokit";
+import type { ReleaseInfo } from "../../types";
+import { RELEASES_FILE_PATH } from "~~/shared/constants";
 
-const RELEASES_FILE_PATH = "app/.data/releases.json";
+export default defineEventHandler(async (event) => {
+  const config = useRuntimeConfig();
+  const octokit = new Octokit({
+    auth: config.writeDataGithubToken,
+  });
 
-const config = useRuntimeConfig();
-const octokit = new Octokit({
-  auth: process.env.PAT_GITHUB_TOKEN_WRITE_DATA,
-});
-
-export async function get(): Promise<ReleaseInfo[]> {
-  try {
-    const response = await octokit.request(
-      "GET /repos/{owner}/{repo}/contents/{path}",
-      {
-        owner: "trueberryless-org",
-        repo: "releases",
-        path: RELEASES_FILE_PATH,
-      }
-    );
-
-    if (
-      response.status === 200 &&
-      response.data &&
-      "content" in response.data
-    ) {
-      const decodedContent = Buffer.from(
-        response.data.content,
-        "base64"
-      ).toString("utf-8");
-      return JSON.parse(decodedContent) as ReleaseInfo[];
-    } else {
-      console.error("File not found or content not available");
-      return [];
-    }
-  } catch (error) {
-    console.error("Error fetching release info:", error);
-    return [];
-  }
-}
-
-export async function set(infos: ReleaseInfo[]) {
-  console.log(JSON.stringify(infos));
+  const { infos } = await readBody(event);
   const content = Buffer.from(JSON.stringify(infos)).toString("base64");
-  const sha = await getFileSHA(RELEASES_FILE_PATH);
+  const sha = await getFileSHA(octokit, RELEASES_FILE_PATH);
 
   try {
     const response = await octokit.request(
@@ -62,15 +30,19 @@ export async function set(infos: ReleaseInfo[]) {
         "File created/updated successfully:",
         response.data.commit.sha
       );
+      return { success: true, message: "File updated successfully" };
     } else {
       console.error("Failed to create/update file:", response.status);
+      return { success: false, message: "Failed to update file" };
     }
   } catch (error) {
     console.error("Error creating/updating file:", error);
+    return { success: false, message: "Error creating/updating file" };
   }
-}
+});
 
 async function getFileSHA(
+  octokit: Octokit,
   filePath: string,
   owner: string = "trueberryless-org",
   repo: string = "releases"

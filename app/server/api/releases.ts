@@ -1,4 +1,3 @@
-import { get, set } from "~~/libs/data";
 import type { ReleaseInfo } from "../../types";
 import { Octokit } from "octokit";
 
@@ -27,7 +26,8 @@ export default defineLazyEventHandler(async () => {
 
   // The GitHub `/events` API only returns the latest 300 events (3 pages)
   // Thus here we use Github to store the previous data to persist the history for a longer time
-  let infos: ReleaseInfo[] = (await get()) || [];
+  let infos: ReleaseInfo[] = (await $fetch("/api/data")) || [];
+  let oldInfos = infos;
 
   infos.forEach((item) => {
     if (typeof item.created_at === "string")
@@ -124,7 +124,12 @@ export default defineLazyEventHandler(async () => {
 
       if (infos.length > LIMIT) infos.slice(0, LIMIT);
 
-      await set(infos);
+      if (JSON.stringify(oldInfos.reverse()) !== JSON.stringify(infos)) {
+        await $fetch("/api/data", {
+          method: "POST",
+          body: { infos },
+        });
+      }
 
       return {
         infos,
