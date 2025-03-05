@@ -75,8 +75,8 @@ jobs:
 
       - name: Get published version
         run: |
-          VERSION=$(node -p "require('./app/package.json').version")
           git checkout changeset-release/main
+          VERSION=$(node -p "require('./app/package.json').version")
           git commit --amend -m "chore(release): publish v$VERSION" --no-edit
           git push origin changeset-release/main:changeset-release/main --force
 
