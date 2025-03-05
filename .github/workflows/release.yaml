@@ -40,7 +40,7 @@ jobs:
       - name: Get next version
         id: version
         run: |
-          echo "VERSION=$(node -p "require('./package.json').version")" >> $GITHUB_ENV
+          echo "VERSION=$(node -p "require('./app/package.json').version")" >> $GITHUB_ENV
 
       - name: Create Release Pull Request
         uses: changesets/action@v1
