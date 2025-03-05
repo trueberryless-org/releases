@@ -24,10 +24,10 @@ const list = computed(() => {
   <div flex="~ col gap-8" mxa max-w-180 p10 font-sans lt-sm="px6">
     <div flex="~ col gap-4">
       <h1 flex="~ gap-2 col justify-center items-center">
-        <a :href="`https://github.com/${config.public.login}`" target="_blank">
+        <a :href="`https://github.com/${config.public.name}`" target="_blank">
           <img
-            :src="`https://github.com/${config.public.login}.png`"
-            :alt="`${config.public.login}`"
+            :src="`https://github.com/${config.public.name}.png`"
+            :alt="`${config.public.name}`"
             mr1
             h-18
             w-18
@@ -38,7 +38,7 @@ const list = computed(() => {
         <div flex="~ col">
           <div text-3xl>
             <a
-              :href="`https://github.com/${config.public.login}`"
+              :href="`https://github.com/${config.public.name}`"
               target="_blank"
             >
               {{ config.public.name }}
@@ -62,7 +62,7 @@ const list = computed(() => {
           <span i-ph-sun-duotone dark:i-ph-moon-stars-duotone flex />
         </button>
         <a
-          href="https://github.com/antfu/releases.antfu.me"
+          href="https://github.com/trueberryless-org/releases"
           target="_blank"
           title="GitHub Source Code"
         >
@@ -109,8 +109,8 @@ const list = computed(() => {
       <hr ma w-20 op25 />
     </div>
     <div text-center op50>
-      <a href="https://github.com/atinux/my-pull-requests"
-        >Create your own page for contributions</a
+      <a href="https://github.com/antfu/releases.antfu.me"
+        >Create your own page for latest releases</a
       >
     </div>
   </div>
