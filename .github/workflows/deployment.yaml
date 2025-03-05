@@ -63,12 +63,17 @@ jobs:
       - name: Install Dependencies
         run: pnpm i
 
+      - name: Get next version
+        id: version
+        run: |
+          echo "VERSION=$(pnpm changeset version --snapshot | grep -oP '"version": "\K[^"]+')" >> $GITHUB_ENV
+
       - name: Create Release Pull Request
-        id: changesets
         uses: changesets/action@v1
         with:
-          commit: "[ci] release"
-          title: "[ci] release"
+          version: pnpm run version
+          commit: "chore: release v${{ env.VERSION }}"
+          title: "chore: release v${{ env.VERSION }}"
         env:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

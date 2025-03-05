@@ -1,7 +1,7 @@
 import process from "node:process";
 
 const name = process.env.GITHUB_NAME || "trueberryless";
-const login = process.env.GITHUB_LOGIN || "trueberryless";
+const login = process.env.GITHUB_LOGIN || "trueberryless-org";
 const website =
   process.env.WEBSITE_DOMAIN || "https://releases.trueberryless.org";
 
