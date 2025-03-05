@@ -63,20 +63,20 @@ jobs:
       - name: Install Dependencies
         run: pnpm i
 
-      - name: Get next version
-        id: version
-        run: |
-          echo "VERSION=$(node -p "require('./app/package.json').version")" >> $GITHUB_ENV
-
       - name: Create Release Pull Request
         uses: changesets/action@v1
         with:
           version: pnpm run version
-          commit: "chore: release v${{ env.VERSION }}"
-          title: "chore: release v${{ env.VERSION }}"
+          commit: "chore: release v[VERSION]"
+          title: "[ci] release"
         env:
-          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
+          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token}}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Get published version
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          git commit --amend -m "chore(release): publish v$VERSION" --no-edit
 
   image-tag:
     name: Image Tag
