@@ -1,5 +1,6 @@
-import type { ReleaseInfo } from "../../types";
 import { Octokit } from "octokit";
+
+import type { ReleaseInfo } from "../../types";
 
 const LIMIT = 200;
 
