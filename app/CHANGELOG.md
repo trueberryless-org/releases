@@ -1,5 +1,11 @@
 # releases
 
+## 0.2.3
+
+### Patch Changes
+
+- [`1671604`](https://github.com/trueberryless-org/releases/commit/1671604a80e9a455fae95f780ad06b934b6e302a) Thanks [@trueberryless](https://github.com/trueberryless)! - Fix deep copy instead of reference copy (oldInfos var)
+
 ## 0.2.2
 
 ### Patch Changes
