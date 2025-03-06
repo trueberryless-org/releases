@@ -168,7 +168,7 @@ const HighlightedVersion = defineComponent({
       <div flex="~ col items-end" lt-sm="flex-row gap-2" text-end>
         <a
           font-mono
-          :href="`https://github.com/${item.repo}/releases/tag/v${item.version}`"
+          :href="`https://github.com/${item.repo}/releases/tag/${item.package}@${item.version}`"
           target="_blank"
         >
           <HighlightedVersion />

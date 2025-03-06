@@ -67,6 +67,9 @@ export default defineLazyEventHandler(async () => {
             const title = (commit?.message || "").split("\n")[0];
             const version =
               title.match(/v?(\d+\.\d+\.\d+(?:-[\w.]+)?)(?:\s|$)/)?.[1] || "";
+            const packageName =
+              title.match(/(?<=release\s)([\w-]+)(?=\sv\d+\.\d+\.\d+)/)?.[1] ||
+              "";
             return {
               id: item.id,
               type: item.type!,
@@ -77,6 +80,7 @@ export default defineLazyEventHandler(async () => {
               commit: `https://github.com/${item.repo.name}/commit/${commit?.sha}`,
               created_at: item.created_at,
               version,
+              package: packageName,
               // payload: item.payload,
             };
           });
@@ -112,10 +116,12 @@ export default defineLazyEventHandler(async () => {
 
       // Sort from newest to oldest
       infos.sort((a, b) => b.created_at - a.created_at);
+      oldInfos.sort((a, b) => b.created_at - a.created_at);
 
       if (infos.length > LIMIT) infos.slice(0, LIMIT);
 
-      if (JSON.stringify(oldInfos.reverse()) !== JSON.stringify(infos)) {
+      if (JSON.stringify(oldInfos) !== JSON.stringify(infos)) {
+        console.log("update");
         await $fetch("/api/data", {
           method: "POST",
           body: { infos },
