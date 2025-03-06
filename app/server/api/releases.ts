@@ -110,17 +110,8 @@ export default defineLazyEventHandler(async () => {
         }
       }
 
-      // Sort from oldest to newest (will be reversed later)
-      infos.sort((a, b) => a.created_at - b.created_at);
-
-      // Filter out continuse releases, keep only the latest one
-      infos = infos.filter((info, index) => {
-        const next = infos[index + 1];
-        if (next && info.repo === next.repo) return false;
-        return true;
-      });
-
-      infos.reverse();
+      // Sort from newest to oldest
+      infos.sort((a, b) => b.created_at - a.created_at);
 
       if (infos.length > LIMIT) infos.slice(0, LIMIT);
 
