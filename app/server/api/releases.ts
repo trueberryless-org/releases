@@ -27,9 +27,14 @@ export default defineLazyEventHandler(async () => {
   // The GitHub `/events` API only returns the latest 300 events (3 pages)
   // Thus here we use Github to store the previous data to persist the history for a longer time
   let infos: ReleaseInfo[] = (await $fetch("/api/data")) || [];
-  let oldInfos = infos;
+  let oldInfos: ReleaseInfo[] = JSON.parse(JSON.stringify(infos));
 
   infos.forEach((item) => {
+    if (typeof item.created_at === "string")
+      item.created_at = +new Date(item.created_at);
+  });
+
+  oldInfos.forEach((item) => {
     if (typeof item.created_at === "string")
       item.created_at = +new Date(item.created_at);
   });
@@ -121,7 +126,6 @@ export default defineLazyEventHandler(async () => {
       if (infos.length > LIMIT) infos.slice(0, LIMIT);
 
       if (JSON.stringify(oldInfos) !== JSON.stringify(infos)) {
-        console.log("update");
         await $fetch("/api/data", {
           method: "POST",
           body: { infos },
