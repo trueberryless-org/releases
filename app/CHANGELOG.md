@@ -1,5 +1,11 @@
 # releases
 
+## 0.2.2
+
+### Patch Changes
+
+- [`951f7cd`](https://github.com/trueberryless-org/releases/commit/951f7cde245d401fa048dc0ea27fe33ce4e3c1f4) Thanks [@trueberryless](https://github.com/trueberryless)! - Fix tag link, add package name to ReleaseInfo
+
 ## 0.2.1
 
 ### Patch Changes
