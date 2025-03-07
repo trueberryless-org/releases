@@ -1,5 +1,11 @@
 # releases
 
+## 0.2.5
+
+### Patch Changes
+
+- [`1820bf5`](https://github.com/trueberryless-org/releases/commit/1820bf5c528e12f5da361762f0781af9c4dc81b8) Thanks [@trueberryless](https://github.com/trueberryless)! - Try GitHub App Bot token for writing updated data to GitHub repo
+
 ## 0.2.4
 
 ### Patch Changes
