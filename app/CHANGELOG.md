@@ -1,5 +1,11 @@
 # releases
 
+## 0.2.4
+
+### Patch Changes
+
+- [`7cdcb6c`](https://github.com/trueberryless-org/releases/commit/7cdcb6c35b3579a99f1312ba9b1650cd951f4260) Thanks [@trueberryless](https://github.com/trueberryless)! - Link to repo if tag is not available (either package or version undefined)
+
 ## 0.2.3
 
 ### Patch Changes
