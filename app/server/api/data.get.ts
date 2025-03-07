@@ -6,7 +6,7 @@ import type { ReleaseInfo } from "../../types";
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig();
   const octokit = new Octokit({
-    auth: config.writeDataGithubToken,
+    auth: config.githubToken,
   });
 
   try {

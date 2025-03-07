@@ -140,7 +140,7 @@ export default defineLazyEventHandler(async () => {
       };
     },
     {
-      maxAge: 60 * 5 /* 5 minutes */,
+      maxAge: 60 * 1 /* 5 minutes */,
       swr: true,
     }
   );

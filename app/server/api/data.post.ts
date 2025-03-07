@@ -1,26 +1,29 @@
-import { Octokit } from "octokit";
+import { App, Octokit } from "octokit";
 import { RELEASES_FILE_PATH } from "~~/shared/constants";
 
 import type { ReleaseInfo } from "../../types";
 
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig();
-  const octokit = new Octokit({
-    auth: config.writeDataGithubToken,
+  const app = new App({
+    appId: config.botAppId,
+    privateKey: config.botPrivateKey,
   });
+
+  console.log(app);
 
   const { infos } = await readBody(event);
   const content = Buffer.from(JSON.stringify(infos)).toString("base64");
-  const sha = await getFileSHA(octokit, RELEASES_FILE_PATH);
+  const sha = await getFileSHA(app.octokit, RELEASES_FILE_PATH);
 
   try {
-    const response = await octokit.request(
+    const response = await app.octokit.request(
       "PUT /repos/{owner}/{repo}/contents/{path}",
       {
         owner: "trueberryless-org",
         repo: "releases",
         path: RELEASES_FILE_PATH,
-        message: "data: update releases.json file",
+        message: "[bot] data: update releases.json file",
         content,
         sha: sha || undefined,
       }

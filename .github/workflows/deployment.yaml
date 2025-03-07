@@ -112,13 +112,6 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Generate GitHub App token
-        id: generate_token
-        uses: tibdex/github-app-token@v2.1.0
-        with:
-          app_id: ${{ secrets.BOT_APP_ID }}
-          private_key: ${{ secrets.BOT_PRIVATE_KEY }}
-
       - name: Check out the repo
         uses: actions/checkout@v4
         with:
@@ -147,7 +140,8 @@ jobs:
         working-directory: ./app
         env:
           PAT_GITHUB_TOKEN_GET_RELEASES: ${{ secrets.PAT_GITHUB_TOKEN_GET_RELEASES }}
-          PAT_GITHUB_TOKEN_WRITE_DATA: ${{ steps.generate_token.outputs.token }}
+          BOT_APP_ID: ${{ secrets.BOT_APP_ID }}
+          BOT_PRIVATE_KEY: ${{ secrets.BOT_PRIVATE_KEY }}
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
