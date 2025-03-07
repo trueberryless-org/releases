@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { ReturnData } from "~~/server/api/releases";
 import { formatTimeAgo } from "@vueuse/core";
+import type { ReturnData } from "~~/server/api/releases";
 
 const isDark = useDark();
 

@@ -1,6 +1,7 @@
 import { Octokit } from "octokit";
-import type { ReleaseInfo } from "../../types";
 import { RELEASES_FILE_PATH } from "~~/shared/constants";
+
+import type { ReleaseInfo } from "../../types";
 
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig();
