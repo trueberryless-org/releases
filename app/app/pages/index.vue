@@ -8,7 +8,7 @@ const { data } = await useFetch<ReturnData>("/api/releases");
 
 const config = useRuntimeConfig();
 
-const DEDUPE_RANGE = 5;
+const DEDUPE_RANGE = 0;
 // Filter out the same repo in the last 5 items
 const list = computed(() => {
   const items = data.value?.infos || [];
