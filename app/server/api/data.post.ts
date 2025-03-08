@@ -1,3 +1,5 @@
+import crypto from "crypto";
+import * as jose from "jose";
 import { App, Octokit } from "octokit";
 import { RELEASES_FILE_PATH } from "~~/shared/constants";
 
@@ -9,15 +11,17 @@ export default defineEventHandler(async (event) => {
     appId: config.botAppId,
     privateKey: config.botPrivateKey,
   });
-
-  console.log(app);
+  const installationId = await getInstallationId();
+  if (!installationId)
+    return { success: false, message: "Failed to get installation id" };
+  const octokit = await app.getInstallationOctokit(installationId);
 
   const { infos } = await readBody(event);
   const content = Buffer.from(JSON.stringify(infos)).toString("base64");
-  const sha = await getFileSHA(app.octokit, RELEASES_FILE_PATH);
+  const sha = await getFileSHA(octokit, RELEASES_FILE_PATH);
 
   try {
-    const response = await app.octokit.request(
+    const response = await octokit.request(
       "PUT /repos/{owner}/{repo}/contents/{path}",
       {
         owner: "trueberryless-org",
@@ -44,6 +48,47 @@ export default defineEventHandler(async (event) => {
     return { success: false, message: "Error creating/updating file" };
   }
 });
+
+async function getInstallationId(): Promise<number | null> {
+  const config = useRuntimeConfig();
+  const alg = "RS256";
+
+  // doesnt work
+  const secret = crypto.createPrivateKey({
+    key: config.botPrivateKey,
+    format: "pem",
+  });
+  console.log("test");
+
+  const jwt = await new jose.SignJWT()
+    .setProtectedHeader({ alg })
+    .setIssuedAt("-1min")
+    .setIssuer(config.botAppId)
+    .setExpirationTime("10min")
+    .sign(secret);
+
+  const octokit = new Octokit({
+    auth: jwt,
+  });
+
+  try {
+    const response = await octokit.request("GET /app/installations", {
+      headers: {
+        "X-GitHub-Api-Version": "2022-11-28",
+      },
+    });
+
+    if (response.status === 200) {
+      return response.data[0].id;
+    } else {
+      console.error("Failed to get installation id:", response.status);
+      return null;
+    }
+  } catch (error) {
+    console.error("Error getting installation id:", error);
+    return null;
+  }
+}
 
 async function getFileSHA(
   octokit: Octokit,

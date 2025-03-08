@@ -26,6 +26,9 @@ importers:
 
   app:
     dependencies:
+      jose:
+        specifier: ^6.0.8
+        version: 6.0.8
       octokit:
         specifier: ^4.0.2
         version: 4.1.2
@@ -3506,6 +3509,9 @@ packages:
   jiti@2.4.2:
     resolution: {integrity: sha512-rg9zJN+G4n2nfJl5MW3BMygZX56zKPNVEYYqq7adpmMh4Jn2QNEwhvQlFy6jPVdcod7txZtKHWnyZiA3a0zP7A==}
     hasBin: true
+
+  jose@6.0.8:
+    resolution: {integrity: sha512-EyUPtOKyTYq+iMOszO42eobQllaIjJnwkZ2U93aJzNyPibCy7CEvT9UQnaCVB51IAd49gbNdCew1c0LcLTCB2g==}
 
   js-levenshtein@1.1.6:
     resolution: {integrity: sha512-X2BB11YZtrRqY4EnQcLX5Rh373zbK4alC1FW7D7MBhL2gtcC17cTnr6DmfHZeS0s2rTHjUTMMHfG7gO8SSdw+g==}
@@ -9507,6 +9513,8 @@ snapshots:
       supports-color: 8.1.1
 
   jiti@2.4.2: {}
+
+  jose@6.0.8: {}
 
   js-levenshtein@1.1.6: {}
 

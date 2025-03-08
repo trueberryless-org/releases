@@ -126,12 +126,12 @@ export default defineLazyEventHandler(async () => {
 
       if (infos.length > LIMIT) infos.slice(0, LIMIT);
 
-      if (JSON.stringify(oldInfos) !== JSON.stringify(infos)) {
-        await $fetch("/api/data", {
-          method: "POST",
-          body: { infos },
-        });
-      }
+      // if (JSON.stringify(oldInfos) !== JSON.stringify(infos)) {
+      await $fetch("/api/data", {
+        method: "POST",
+        body: { infos },
+      });
+      // }
 
       return {
         infos,
