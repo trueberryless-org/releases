@@ -10,7 +10,8 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     githubToken: process.env.PAT_GITHUB_TOKEN_GET_RELEASES,
-    writeDataGithubToken: process.env.PAT_GITHUB_TOKEN_WRITE_DATA,
+    botAppId: process.env.BOT_APP_ID,
+    botPrivateKey: process.env.BOT_PRIVATE_KEY,
     public: {
       name,
       login,
