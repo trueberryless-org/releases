@@ -1,5 +1,11 @@
 # releases
 
+## 0.2.6
+
+### Patch Changes
+
+- [#15](https://github.com/trueberryless-org/releases/pull/15) [`74f486c`](https://github.com/trueberryless-org/releases/commit/74f486cecd53bea8f1ae92bc4d8a643568cdc17d) Thanks [@trueberryless](https://github.com/trueberryless)! - Authenticate as trueberryless-org [bot] instead of my personal account
+
 ## 0.2.5
 
 ### Patch Changes
