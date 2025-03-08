@@ -53,12 +53,7 @@ async function getInstallationId(): Promise<number | null> {
   const config = useRuntimeConfig();
   const alg = "RS256";
 
-  // doesnt work
-  const secret = crypto.createPrivateKey({
-    key: config.botPrivateKey,
-    format: "pem",
-  });
-  console.log("test");
+  const secret = crypto.createPrivateKey(config.botPrivateKey);
 
   const jwt = await new jose.SignJWT()
     .setProtectedHeader({ alg })
