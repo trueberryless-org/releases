@@ -1,5 +1,11 @@
 # releases
 
+## 0.2.7
+
+### Patch Changes
+
+- [`207bda6`](https://github.com/trueberryless-org/releases/commit/207bda6a77e3166b7b7adb491d8907889ae933f7) Thanks [@trueberryless](https://github.com/trueberryless)! - Set LIMIT to 300 and DEDUPE_RANGE to 5
+
 ## 0.2.6
 
 ### Patch Changes
