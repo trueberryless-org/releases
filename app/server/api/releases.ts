@@ -2,7 +2,7 @@ import { Octokit } from "octokit";
 
 import type { ReleaseInfo } from "../../types";
 
-const LIMIT = 200;
+const LIMIT = 300;
 
 const refs = [
   "refs/heads/main",
