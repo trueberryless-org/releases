@@ -79,7 +79,8 @@ jobs:
         run: |
           git checkout changeset-release/main
           VERSION=$(node -p "require('./app/package.json').version")
-          git commit --amend -m "[ci] release ${{ env.IMAGE_NAME }} v$VERSION" --no-edit
+          NAME=$(node -p "require('./app/package.json').name")
+          git commit --amend -m "[ci] release $NAME v$VERSION" --no-edit
           git push origin changeset-release/main:changeset-release/main --force
 
   image-tag:
@@ -138,10 +139,6 @@ jobs:
         run: pnpm run build
         shell: bash
         working-directory: ./app
-        env:
-          PAT_GITHUB_TOKEN_GET_RELEASES: ${{ secrets.PAT_GITHUB_TOKEN_GET_RELEASES }}
-          BOT_APP_ID: ${{ secrets.BOT_APP_ID }}
-          BOT_PRIVATE_KEY: ${{ secrets.BOT_PRIVATE_KEY }}
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
