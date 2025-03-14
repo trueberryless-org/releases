@@ -51,7 +51,7 @@ const list = computed(() => {
               target="_blank"
             >
               <span font-mono>@{{ config.public.login }}</span
-              >'s recent releases commits on GitHub
+              >'s profile on GitHub
             </a>
           </p>
         </div>
