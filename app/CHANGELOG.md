@@ -1,5 +1,11 @@
 # releases
 
+## 0.2.9
+
+### Patch Changes
+
+- [`5da8b72`](https://github.com/trueberryless-org/releases/commit/5da8b720025e4e3ced07d07a7aaea6d6bb14c35a) Thanks [@trueberryless](https://github.com/trueberryless)! - Reduce DEDUPE_RANGE to 2
+
 ## 0.2.8
 
 ### Patch Changes
