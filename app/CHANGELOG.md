@@ -1,5 +1,11 @@
 # releases
 
+## 0.2.8
+
+### Patch Changes
+
+- [`58dd27e`](https://github.com/trueberryless-org/releases/commit/58dd27e11e4803ecf56035e41f12bbf6e6467b84) Thanks [@trueberryless](https://github.com/trueberryless)! - Change subheading text
+
 ## 0.2.7
 
 ### Patch Changes
