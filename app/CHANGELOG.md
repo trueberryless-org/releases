@@ -1,5 +1,11 @@
 # releases
 
+## 0.2.10
+
+### Patch Changes
+
+- [#21](https://github.com/trueberryless-org/releases/pull/21) [`e3a74cd`](https://github.com/trueberryless-org/releases/commit/e3a74cd3962123d9de73f8b6e116cc9b440813d1) Thanks [@trueberryless](https://github.com/trueberryless)! - Create own signature logo
+
 ## 0.2.9
 
 ### Patch Changes
