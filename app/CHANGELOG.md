@@ -1,5 +1,11 @@
 # releases
 
+## 0.2.11
+
+### Patch Changes
+
+- [`d4840b1`](https://github.com/trueberryless-org/releases/commit/d4840b16558d451269a3fb5308a565cc6531a87a) Thanks [@trueberryless](https://github.com/trueberryless)! - Test run with new renovate versions
+
 ## 0.2.10
 
 ### Patch Changes
