@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: releases
-          image: "trueberryless/releases:0.2.10"
+          image: "trueberryless/releases:0.2.11"
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
