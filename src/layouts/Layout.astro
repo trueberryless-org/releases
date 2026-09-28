@@ -16,9 +16,27 @@ const {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="color-scheme" content="dark light" />
     <title>{title}</title>
+    <meta
+      name="description"
+      content="Recent GitHub releases from Felix Schneider."
+    />
+    <meta property="og:title" content={title} />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Recent GitHub releases from Felix Schneider."
+    />
+    <meta
+      property="og:image"
+      content="https://recent-releases.felixs.dev/og.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="What Felix has been releasing."
+    />
     <script is:inline>
       try {
         const theme = localStorage.getItem("vueuse-color-scheme");
