@@ -1,134 +1,87 @@
 ---
-import type { ReleaseInfo } from "../types";
+import { GITHUB_ORGANIZATION } from "../libs/config";
+import { type Release, isSeparatedFromPreviousRelease } from "../libs/releases";
+import { formatTimeAgo } from "../libs/time";
+import { getHighlightedVersion } from "../libs/version";
 
 interface Props {
-  item: ReleaseInfo;
-  prev?: ReleaseInfo;
-  config: {
-    name: string;
-    login: string;
-  };
+  previousRelease: Release | undefined;
+  release: Release;
 }
 
-const { item, prev, config } = Astro.props;
+const { previousRelease, release } = Astro.props;
 
-const timeDiffHours = prev
-  ? Math.abs(
-      new Date(prev.created_at).getTime() - new Date(item.created_at).getTime()
-    ) /
-    1000 /
-    60 /
-    60
-  : 0;
-
-function getHighlightedVersion(version: string) {
-  const parts = version.split(/(\.)/g);
-
-  let highlightedIndex = -1;
-  for (let i = parts.length - 1; i >= 0; i--) {
-    if (parts[i] !== ".") {
-      const num = +parts[i]!;
-      if (!Number.isNaN(num) && num > 0) {
-        highlightedIndex = i;
-        break;
-      }
-    }
-  }
-
-  const mergedParts = [
-    parts.slice(0, highlightedIndex).join(""),
-    parts.slice(highlightedIndex).join(""),
-  ];
-
-  const colors = ["rose", "green", "purple", "teal"];
-  const colorIndex = Math.min(
-    Math.floor(highlightedIndex / 2),
-    colors.length - 1
-  );
-  const color =
-    highlightedIndex >= 0 ? colors[colorIndex] : colors[colors.length - 1];
-
-  return { mergedParts, color };
-}
-
-const { mergedParts, color } = getHighlightedVersion(item.version);
-
-function formatTimeAgo(date: Date): string {
-  const now = new Date();
-  const diffInSeconds = Math.floor((now.getTime() - date.getTime()) / 1000);
-
-  if (diffInSeconds < 60) return "just now";
-  if (diffInSeconds < 3600)
-    return `${Math.floor(diffInSeconds / 60)} minutes ago`;
-  if (diffInSeconds < 86400)
-    return `${Math.floor(diffInSeconds / 3600)} hours ago`;
-  if (diffInSeconds < 2592000)
-    return `${Math.floor(diffInSeconds / 86400)} days ago`;
-  if (diffInSeconds < 31536000)
-    return `${Math.floor(diffInSeconds / 2592000)} months ago`;
-  return `${Math.floor(diffInSeconds / 31536000)} years ago`;
-}
+const repositoryUrl = `https://github.com/${GITHUB_ORGANIZATION}/${release.repository}`;
+const version = getHighlightedVersion(release.version);
+const publishedAt = new Date(release.publishedAt);
 ---
 
-<div class={`item ${timeDiffHours > 11 ? "mt-large" : ""}`}>
+<div
+  class:list={[
+    "item",
+    { "mt-large": isSeparatedFromPreviousRelease(release, previousRelease) },
+  ]}
+>
   <a
-    href={`https://github.com/trueberryless-org/${item.package}`}
+    href={repositoryUrl}
     target="_blank"
     class="logo-link"
+    tabindex="-1"
+    aria-hidden="true"
   >
     <img
-      src={`https://github.com/trueberryless-org.png`}
-      alt={item.package}
+      src={`https://github.com/${GITHUB_ORGANIZATION}.png?size=96`}
+      alt=""
+      width="48"
+      height="48"
+      loading="lazy"
       class="logo rounded"
     />
   </a>
 
   <div class="content">
     <div class="main">
-      <a
-        href={`https://github.com/trueberryless-org/${item.package}`}
-        target="_blank"
-        class="repo-link"
-      >
+      <a href={repositoryUrl} target="_blank" class="repo-link">
         <div class="owner">
-          trueberryless-org<span class="slash">/</span>
+          {GITHUB_ORGANIZATION}
+          <span class="slash">/</span>
         </div>
-        <div class="name">{item.package}</div>
+        <div class="name">{release.package}</div>
       </a>
-      <a href={item.commit} target="_blank" class="commit">
+      <a
+        href={release.url}
+        target="_blank"
+        class="commit"
+        title={release.summary}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
           height="16"
           viewBox="0 0 256 256"
           class="commit-icon"
+          aria-hidden="true"
         >
           <path
             fill="currentColor"
             d="M248,120H183.42a56,56,0,0,0-110.84,0H8a8,8,0,0,0,0,16H72.58a56,56,0,0,0,110.84,0H248a8,8,0,0,0,0-16ZM128,168a40,40,0,1,1,40-40A40,40,0,0,1,128,168Z"
           ></path>
         </svg>
-        {item.title}
+        <span class="summary">{release.summary}</span>
       </a>
     </div>
     <div class="meta">
-      <a
-        href={`https://github.com/trueberryless-org/${item.package}/releases${
-          item.package && item.version
-            ? `/tag/${item.package}@${item.version}`
-            : item.version
-              ? `/tag/v${item.version}`
-              : ""
-        }`}
-        target="_blank"
-        class="version"
-      >
-        <span>v</span>{mergedParts[0]}<span class={`highlight ${color}`}
-          >{mergedParts[1]}</span
-        >
+      <a href={release.url} target="_blank" class="version">
+        <span>v</span>
+        {version.prefix}
+        <span class={`highlight ${version.color}`}>{version.highlighted}</span>
       </a>
-      <time datetime={new Date(item.created_at).toISOString()} class="time">
-        {formatTimeAgo(new Date(item.created_at))}
+      <time
+        datetime={publishedAt.toISOString()}
+        data-relative-time
+        class="time"
+      >
+        {formatTimeAgo(publishedAt)}
       </time>
     </div>
   </div>
@@ -174,38 +127,6 @@ function formatTimeAgo(date: Date): string {
 
   .logo.rounded {
     border-radius: 0.5rem;
-  }
-
-  .logo.square {
-    border-radius: 0.25rem;
-  }
-
-  .sub-logo {
-    border: 1px solid rgba(128, 128, 128, 0.05);
-    position: absolute;
-    bottom: -0.5rem;
-    right: -0.5rem;
-    border-radius: 50%;
-    background-color: white;
-    padding: 0.25rem;
-  }
-
-  html.dark .sub-logo {
-    background-color: #121212;
-  }
-
-  .sub-img {
-    display: block;
-    margin: auto;
-    height: 1.25rem;
-    width: 1.25rem;
-  }
-
-  .sub-icon {
-    display: block;
-    margin: auto;
-    height: 1.125rem;
-    width: 1.125rem;
   }
 
   .content {
@@ -262,6 +183,10 @@ function formatTimeAgo(date: Date): string {
     font-size: 0.875rem;
     line-height: 1.25rem;
     opacity: 0.5;
+    min-width: 0;
+  }
+
+  .summary {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
