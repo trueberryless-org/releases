@@ -1,34 +1,44 @@
 {
   "name": "recent-releases",
-  "version": "0.0.1",
-  "homepage": "https://recent-releases.felixs.dev",
-  "bugs": {
-    "url": "https://github.com/trueberryless-org/recent-releases/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/trueberryless-org/recent-releases.git"
-  },
+  "version": "0.0.0",
   "license": "MIT",
+  "description": "A page listing the recent releases of the trueberryless-org GitHub organization.",
   "author": "trueberryless <trueberryless@gmail.com> (https://felixs.dev)",
+  "private": true,
   "type": "module",
   "scripts": {
     "astro": "astro",
     "build": "astro build",
+    "check": "astro check",
     "dev": "astro dev",
+    "format": "prettier . --write --cache --ignore-unknown",
     "preview": "astro preview",
+    "test": "vitest",
+    "update-releases": "node scripts/update-releases.ts",
     "version": "pnpm changeset version && pnpm i --no-frozen-lockfile"
   },
   "dependencies": {
-    "astro": "^5.18.2",
-    "octokit": "^5.0.5"
+    "astro": "^7.3.5"
   },
   "devDependencies": {
-    "@changesets/changelog-github": "^0.7.0",
-    "@changesets/cli": "^2.31.1",
-    "@trivago/prettier-plugin-sort-imports": "6.0.2",
-    "prettier": "3.9.6",
-    "prettier-plugin-astro": "0.14.1"
+    "@astrojs/check": "^0.9.10",
+    "@changesets/changelog-github": "^1.0.1",
+    "@changesets/cli": "^3.0.3",
+    "@trivago/prettier-plugin-sort-imports": "^6.0.2",
+    "@types/node": "^24.19.0",
+    "prettier": "^3.9.9",
+    "prettier-plugin-astro": "^1.1.0",
+    "typescript": "^6.0.3",
+    "vitest": "^5.0.2"
   },
-  "packageManager": "pnpm@11.1.2"
+  "packageManager": "pnpm@12.6.0",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "homepage": "https://recent-releases.netlify.app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trueberryless-org/recent-releases.git"
+  },
+  "bugs": "https://github.com/trueberryless-org/recent-releases/issues"
 }
