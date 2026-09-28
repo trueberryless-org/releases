@@ -1,146 +1,1856 @@
 [
   {
-    "title": "ci: release starlight-toc-overview-customizer v0.1.2 (#30)",
-    "sha": "35a0d704cc1c777fc8fa3d4f7e440f6613d4c763",
-    "commit": "https://github.com/trueberryless-org/starlight-toc-overview-customizer/commit/35a0d704cc1c777fc8fa3d4f7e440f6613d4c763",
-    "created_at": 1764524340000,
-    "version": "0.1.2",
-    "package": "starlight-toc-overview-customizer"
+    "id": "RE_kwDONKugD84Xup0m",
+    "package": "astro-contributors",
+    "publishedAt": "2026-09-28T09:28:00Z",
+    "repository": "astro-contributors",
+    "summary": "Adds a formatLink prop to the ContributorList and AllContributors components to customize the link of each contributor, e.g. to link to their commits in your repository instead of their GitHub profile.",
+    "url": "https://github.com/trueberryless-org/astro-contributors/releases/tag/astro-contributors%400.10.0",
+    "version": "0.10.0"
   },
   {
-    "title": "ci: release starlight-spell-checker v0.2.3 (#49)",
-    "sha": "736afb254d83fcb07008da2d4f810e3833c35e09",
-    "commit": "https://github.com/trueberryless-org/starlight-spell-checker/commit/736afb254d83fcb07008da2d4f810e3833c35e09",
-    "created_at": 1764524002000,
-    "version": "0.2.3",
-    "package": "starlight-spell-checker"
+    "id": "RE_kwDON5ggOM4XtuBg",
+    "package": "starlight-group-pages",
+    "publishedAt": "2026-09-27T23:51:42Z",
+    "repository": "starlight-group-pages",
+    "summary": "Initial public release: gives every sidebar group a page listing its content as link cards, generated for directories without an index page and appended to existing index pages, and links it from the sidebar group, either as an “Overview” item or through a clickable group label.",
+    "url": "https://github.com/trueberryless-org/starlight-group-pages/releases/tag/starlight-group-pages%400.1.0",
+    "version": "0.1.0"
   },
   {
-    "title": "ci: release starlight-cooler-credit v0.5.0 (#103)",
-    "sha": "12733c9a093c425990ab2d900de992859af78397",
-    "commit": "https://github.com/trueberryless-org/starlight-cooler-credit/commit/12733c9a093c425990ab2d900de992859af78397",
-    "created_at": 1763921723000,
-    "version": "0.5.0",
-    "package": "starlight-cooler-credit"
+    "id": "RE_kwDONVHsm84XtsKx",
+    "package": "starlight-latest-version",
+    "publishedAt": "2026-09-27T23:21:40Z",
+    "repository": "starlight-latest-version",
+    "summary": "Adds support for Astro v7, drops support for Astro v6.",
+    "url": "https://github.com/trueberryless-org/starlight-latest-version/releases/tag/starlight-latest-version%400.9.0",
+    "version": "0.9.0"
   },
   {
-    "title": "ci: release template-files v0.10.6 (#223)",
-    "sha": "aba5cc561614faac9beb4081e90f70c9af2e4e57",
-    "commit": "https://github.com/trueberryless-org/template-files/commit/aba5cc561614faac9beb4081e90f70c9af2e4e57",
-    "created_at": 1762956355000,
-    "version": "0.10.6",
-    "package": "template-files"
+    "id": "RE_kwDOMES_H84Xtemc",
+    "package": "starlight-view-modes",
+    "publishedAt": "2026-09-27T20:21:48Z",
+    "repository": "starlight-view-modes",
+    "summary": "Fixes trailing pause handling inside kept content, enlarges touch targets for presentation controls on touch devices, and clarifies list item pause behavior in the documentation.",
+    "url": "https://github.com/trueberryless-org/starlight-view-modes/releases/tag/starlight-view-modes%400.15.1",
+    "version": "0.15.1"
   },
   {
-    "title": "ci: release release-image-generator v0.5.0 (#46)",
-    "sha": "f1e3b22f2da203a353711c4e9033ea0912555f6c",
-    "commit": "https://github.com/trueberryless-org/release-image-generator/commit/f1e3b22f2da203a353711c4e9033ea0912555f6c",
-    "created_at": 1762692386000,
-    "version": "0.5.0",
-    "package": "release-image-generator"
+    "id": "RE_kwDOMES_H84Xtdjz",
+    "package": "starlight-view-modes",
+    "publishedAt": "2026-09-27T20:08:23Z",
+    "repository": "starlight-view-modes",
+    "summary": "Adds a new Presentation Mode to present documentation pages as slide decks, configurable using the new presentationModeSettings option.",
+    "url": "https://github.com/trueberryless-org/starlight-view-modes/releases/tag/starlight-view-modes%400.15.0",
+    "version": "0.15.0"
   },
   {
-    "title": "ci: release starlight-view-modes v0.11.1 (#123)",
-    "sha": "380db8705b144dc5ab491b3a661583d6ca68ac47",
-    "commit": "https://github.com/trueberryless-org/starlight-view-modes/commit/380db8705b144dc5ab491b3a661583d6ca68ac47",
-    "created_at": 1762079702000,
-    "version": "0.11.1",
-    "package": "starlight-view-modes"
+    "id": "RE_kwDORNQtp84XtZ7H",
+    "package": "starlight-theme-rose-pine",
+    "publishedAt": "2026-09-27T19:22:29Z",
+    "repository": "starlight-theme-rose-pine",
+    "summary": "Adds support for Astro v7, drops support for Astro v6.",
+    "url": "https://github.com/trueberryless-org/starlight-theme-rose-pine/releases/tag/starlight-theme-rose-pine%400.3.0",
+    "version": "0.3.0"
   },
   {
-    "title": "ci: release starlight-toc-overview-customizer v0.1.1 (#25)",
-    "sha": "559c8efc90a11d4f2d83523af0dd1ddd999d1a8c",
-    "commit": "https://github.com/trueberryless-org/starlight-toc-overview-customizer/commit/559c8efc90a11d4f2d83523af0dd1ddd999d1a8c",
-    "created_at": 1762078721000,
-    "version": "0.1.1",
-    "package": "starlight-toc-overview-customizer"
+    "id": "RE_kwDONkEDbs4XtYs5",
+    "package": "starlight-sidebar-swipe",
+    "publishedAt": "2026-09-27T19:06:09Z",
+    "repository": "starlight-sidebar-swipe",
+    "summary": "Adds support for Astro v7, drops support for Astro v6.",
+    "url": "https://github.com/trueberryless-org/starlight-sidebar-swipe/releases/tag/starlight-sidebar-swipe%400.4.0",
+    "version": "0.4.0"
   },
   {
-    "title": "ci: release starlight-theme-next v0.3.3 (#52)",
-    "sha": "39c6cd949434a4aaccafc31c044fd6af64cb396b",
-    "commit": "https://github.com/trueberryless-org/starlight-theme-next/commit/39c6cd949434a4aaccafc31c044fd6af64cb396b",
-    "created_at": 1762078692000,
-    "version": "0.3.3",
-    "package": "starlight-theme-next"
+    "id": "RE_kwDOOHfQ6s4XtT3j",
+    "package": "starlight-save-file-component",
+    "publishedAt": "2026-09-27T18:03:55Z",
+    "repository": "starlight-save-file-component",
+    "summary": "Adds support for Astro v7, drops support for Astro v6 and lower.",
+    "url": "https://github.com/trueberryless-org/starlight-save-file-component/releases/tag/starlight-save-file-component%400.2.0",
+    "version": "0.2.0"
   },
   {
-    "title": "ci: release starlight-sidebar-topics-dropdown v0.5.2 (#69)",
-    "sha": "bec77e02397a9426723cf5be8f949b7f6bc30ab4",
-    "commit": "https://github.com/trueberryless-org/starlight-sidebar-topics-dropdown/commit/bec77e02397a9426723cf5be8f949b7f6bc30ab4",
-    "created_at": 1762077871000,
-    "version": "0.5.2",
-    "package": "starlight-sidebar-topics-dropdown"
+    "id": "RE_kwDOMES_H84XsslZ",
+    "package": "starlight-view-modes",
+    "publishedAt": "2026-09-27T09:53:13Z",
+    "repository": "starlight-view-modes",
+    "summary": "Fixes the types of the title and switchToText properties of the view modes data which are translated strings and not translation keys.",
+    "url": "https://github.com/trueberryless-org/starlight-view-modes/releases/tag/starlight-view-modes%400.14.1",
+    "version": "0.14.1"
   },
   {
-    "title": "ci: release starlight-sidebar-swipe v0.1.1 (#29)",
-    "sha": "55d184b68e175de8edf2501cc3d7e821822fc6a2",
-    "commit": "https://github.com/trueberryless-org/starlight-sidebar-swipe/commit/55d184b68e175de8edf2501cc3d7e821822fc6a2",
-    "created_at": 1762077773000,
-    "version": "0.1.1",
-    "package": "starlight-sidebar-swipe"
+    "id": "RE_kwDOQ2OPic4Xr87h",
+    "package": "starlight-recipes",
+    "publishedAt": "2026-09-26T21:14:52Z",
+    "repository": "starlight-recipes",
+    "summary": "Adds support for Astro v7, drops support for Astro v6.",
+    "url": "https://github.com/trueberryless-org/starlight-recipes/releases/tag/starlight-recipes%400.4.0",
+    "version": "0.4.0"
   },
   {
-    "title": "ci: release starlight-save-file-component v0.1.1 (#19)",
-    "sha": "fd8f88f9664393c357801456e822c3539abfc9f7",
-    "commit": "https://github.com/trueberryless-org/starlight-save-file-component/commit/fd8f88f9664393c357801456e822c3539abfc9f7",
-    "created_at": 1762077722000,
-    "version": "0.1.1",
-    "package": "starlight-save-file-component"
+    "id": "RE_kwDONJ5zGc4Xr8yh",
+    "package": "starlight-plugins-docs-components",
+    "publishedAt": "2026-09-26T21:12:48Z",
+    "repository": "starlight-plugins-docs-components",
+    "summary": "Adds support for Astro v7, drops support for Astro v6.",
+    "url": "https://github.com/trueberryless-org/starlight-plugins-docs-components/releases/tag/starlight-plugins-docs-components%400.7.0",
+    "version": "0.7.0"
   },
   {
-    "title": "ci: release @trueberryless-org/starlight-plugins-docs-components v0.4.3 (#39)",
-    "sha": "c9015091c08fa79ca5a0011037084bb51cef5d30",
-    "commit": "https://github.com/trueberryless-org/starlight-plugins-docs-components/commit/c9015091c08fa79ca5a0011037084bb51cef5d30",
-    "created_at": 1762075786000,
-    "version": "0.4.3",
-    "package": "@trueberryless-org/starlight-plugins-docs-components"
+    "id": "RE_kwDOOVA_Yc4XrjG0",
+    "package": "starlight-theme-next",
+    "publishedAt": "2026-09-26T15:40:05Z",
+    "repository": "starlight-theme-next",
+    "summary": "Adds support for Astro v7, drops support for Astro v6.",
+    "url": "https://github.com/trueberryless-org/starlight-theme-next/releases/tag/starlight-theme-next%400.5.0",
+    "version": "0.5.0"
   },
   {
-    "title": "ci: release starlight-plugin-show-latest-version v0.5.1 (#53)",
-    "sha": "cfb37181ec593b5643cad5f0e28ff6dfb8e50c19",
-    "commit": "https://github.com/trueberryless-org/starlight-plugin-show-latest-version/commit/cfb37181ec593b5643cad5f0e28ff6dfb8e50c19",
-    "created_at": 1762075476000,
-    "version": "0.5.1",
-    "package": "starlight-plugin-show-latest-version"
+    "id": "RE_kwDONCzicM4XrcY5",
+    "package": "starlight-sidebar-topics-dropdown",
+    "publishedAt": "2026-09-26T14:27:47Z",
+    "repository": "starlight-sidebar-topics-dropdown",
+    "summary": "Adds support for Astro v7, drops support for Astro v6.",
+    "url": "https://github.com/trueberryless-org/starlight-sidebar-topics-dropdown/releases/tag/starlight-sidebar-topics-dropdown%400.7.0",
+    "version": "0.7.0"
   },
   {
-    "title": "ci: release starlight-cooler-credit v0.4.1 (#97)",
-    "sha": "1f0e0aba736a8ee265f251877aeb2b4262521bf9",
-    "commit": "https://github.com/trueberryless-org/starlight-cooler-credit/commit/1f0e0aba736a8ee265f251877aeb2b4262521bf9",
-    "created_at": 1762075167000,
-    "version": "0.4.1",
-    "package": "starlight-cooler-credit"
+    "id": "RE_kwDOMES_H84XrZ8C",
+    "package": "starlight-view-modes",
+    "publishedAt": "2026-09-26T13:55:58Z",
+    "repository": "starlight-view-modes",
+    "summary": "Adds support for Astro v7, drops support for Astro v6.",
+    "url": "https://github.com/trueberryless-org/starlight-view-modes/releases/tag/starlight-view-modes%400.14.0",
+    "version": "0.14.0"
   },
   {
-    "title": "ci: release starlight-contributor-list v0.3.1 (#52)",
-    "sha": "ab39f249453f3623e9523f0a96266da807a0e24f",
-    "commit": "https://github.com/trueberryless-org/starlight-contributor-list/commit/ab39f249453f3623e9523f0a96266da807a0e24f",
-    "created_at": 1762075010000,
-    "version": "0.3.1",
-    "package": "starlight-contributor-list"
+    "id": "RE_kwDONMwaYM4XrLiD",
+    "package": "starlight-cooler-credit",
+    "publishedAt": "2026-09-26T10:38:21Z",
+    "repository": "starlight-cooler-credit",
+    "summary": "Adds support for Astro v7, drops support for Astro v6.",
+    "url": "https://github.com/trueberryless-org/starlight-cooler-credit/releases/tag/starlight-cooler-credit%400.7.0",
+    "version": "0.7.0"
   },
   {
-    "title": "ci: release starlight-spell-checker v0.2.2 (#41)",
-    "sha": "896aef65ddc26120fb1041ac19968470f394bea7",
-    "commit": "https://github.com/trueberryless-org/starlight-spell-checker/commit/896aef65ddc26120fb1041ac19968470f394bea7",
-    "created_at": 1761947388000,
-    "version": "0.2.2",
-    "package": "starlight-spell-checker"
+    "id": "RE_kwDONkEDbs4WHx3I",
+    "package": "starlight-sidebar-swipe",
+    "publishedAt": "2026-08-15T19:30:10Z",
+    "repository": "starlight-sidebar-swipe",
+    "summary": "Remove Starlight from dev dependencies",
+    "url": "https://github.com/trueberryless-org/starlight-sidebar-swipe/releases/tag/starlight-sidebar-swipe%400.3.2",
+    "version": "0.3.2"
   },
   {
-    "title": "ci: release template-files v0.10.5 (#219)",
-    "sha": "3f8c5ecd90069af62f0fc40d7fdc2d8eba051b31",
-    "commit": "https://github.com/trueberryless-org/template-files/commit/3f8c5ecd90069af62f0fc40d7fdc2d8eba051b31",
-    "created_at": 1761946935000,
-    "version": "0.10.5",
-    "package": "template-files"
+    "id": "RE_kwDONkEDbs4WHxmD",
+    "package": "starlight-sidebar-swipe",
+    "publishedAt": "2026-08-15T19:24:14Z",
+    "repository": "starlight-sidebar-swipe",
+    "summary": "Internal refactor improvements.",
+    "url": "https://github.com/trueberryless-org/starlight-sidebar-swipe/releases/tag/starlight-sidebar-swipe%400.3.1",
+    "version": "0.3.1"
   },
   {
-    "title": "ci: release template-files v0.10.4 (#217)",
-    "sha": "e4e12c945bd1b36ff26ded534c76c21f5c561547",
-    "commit": "https://github.com/trueberryless-org/template-files/commit/e4e12c945bd1b36ff26ded534c76c21f5c561547",
-    "created_at": 1761946077000,
-    "version": "0.10.4",
-    "package": "template-files"
+    "id": "RE_kwDONRUzM84WHh1T",
+    "package": "template-files",
+    "publishedAt": "2026-08-15T14:44:05Z",
+    "repository": "template-files",
+    "summary": "Delete leftovers of readmetree synchronisation",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.16.3",
+    "version": "0.16.3"
+  },
+  {
+    "id": "RE_kwDONRUzM84WHhZr",
+    "package": "template-files",
+    "publishedAt": "2026-08-15T14:36:09Z",
+    "repository": "template-files",
+    "summary": "Remove unnecessary Changeset config",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.16.2",
+    "version": "0.16.2"
+  },
+  {
+    "id": "RE_kwDONRUzM84WHg9r",
+    "package": "template-files",
+    "publishedAt": "2026-08-15T14:28:12Z",
+    "repository": "template-files",
+    "summary": "Update these GitHub actions with major bump: checkout, labeler, setup-node",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.16.1",
+    "version": "0.16.1"
+  },
+  {
+    "id": "RE_kwDONRUzM84WHgDb",
+    "package": "template-files",
+    "publishedAt": "2026-08-15T14:11:27Z",
+    "repository": "template-files",
+    "summary": "Migrate from Changesets v2 to v3",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.16.0",
+    "version": "0.16.0"
+  },
+  {
+    "id": "RE_kwDONkEDbs4WHXlg",
+    "package": "starlight-sidebar-swipe",
+    "publishedAt": "2026-08-15T11:15:31Z",
+    "repository": "starlight-sidebar-swipe",
+    "summary": "Adds support for Astro v7, drops support for Astro v6.",
+    "url": "https://github.com/trueberryless-org/starlight-sidebar-swipe/releases/tag/starlight-sidebar-swipe%400.3.0",
+    "version": "0.3.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84VcrEt",
+    "package": "template-files",
+    "publishedAt": "2026-07-25T19:16:47Z",
+    "repository": "template-files",
+    "summary": "Add .netlify to Node .gitignore for all projects.",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.15.1",
+    "version": "0.15.1"
+  },
+  {
+    "id": "RE_kwDONRUzM84VPj7Y",
+    "package": "template-files",
+    "publishedAt": "2026-07-19T17:56:08Z",
+    "repository": "template-files",
+    "summary": "Migrate domain names",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.15.0",
+    "version": "0.15.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84VOPPu",
+    "package": "template-files",
+    "publishedAt": "2026-07-18T08:14:12Z",
+    "repository": "template-files",
+    "summary": "Force deletion of tangled.yaml workflow",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.14.1",
+    "version": "0.14.1"
+  },
+  {
+    "id": "RE_kwDONRUzM84VOPC9",
+    "package": "template-files",
+    "publishedAt": "2026-07-18T08:08:42Z",
+    "repository": "template-files",
+    "summary": "Migrate tangled sync to synchub.to",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.14.0",
+    "version": "0.14.0"
+  },
+  {
+    "id": "RE_kwDONVHsm84VGjEl",
+    "package": "starlight-latest-version",
+    "publishedAt": "2026-07-14T19:45:48Z",
+    "repository": "starlight-latest-version",
+    "summary": "Add a virtual:starlight-latest-version module exposing an asynchronous getLatestVersion function to access the latest version programmatically.",
+    "url": "https://github.com/trueberryless-org/starlight-latest-version/releases/tag/starlight-latest-version%400.8.0",
+    "version": "0.8.0"
+  },
+  {
+    "id": "RE_kwDONKugD84UjGbc",
+    "package": "astro-contributors",
+    "publishedAt": "2026-06-25T13:41:56Z",
+    "repository": "astro-contributors",
+    "summary": "Add support for Astro 7",
+    "url": "https://github.com/trueberryless-org/astro-contributors/releases/tag/astro-contributors%400.9.0",
+    "version": "0.9.0"
+  },
+  {
+    "id": "RE_kwDONJ5zGc4Ui2QC",
+    "package": "starlight-plugins-docs-components",
+    "publishedAt": "2026-06-25T11:50:27Z",
+    "repository": "starlight-plugins-docs-components",
+    "summary": "Bump Astro to 7 and Starlight to 0.41 (Starlight >=0.38 still supported)",
+    "url": "https://github.com/trueberryless-org/starlight-plugins-docs-components/releases/tag/starlight-plugins-docs-components%400.6.0",
+    "version": "0.6.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84T55k4",
+    "package": "template-files",
+    "publishedAt": "2026-06-03T19:26:43Z",
+    "repository": "template-files",
+    "summary": "Allow sharp postscripts",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.13.6",
+    "version": "0.13.6"
+  },
+  {
+    "id": "RE_kwDOMES_H84TnMec",
+    "package": "starlight-view-modes",
+    "publishedAt": "2026-05-25T19:50:12Z",
+    "repository": "starlight-view-modes",
+    "summary": "Downgrade pagefind to 1.3.0 and remove CSS import statement in Search override component to fix Search UI issues",
+    "url": "https://github.com/trueberryless-org/starlight-view-modes/releases/tag/starlight-view-modes%400.13.1",
+    "version": "0.13.1"
+  },
+  {
+    "id": "RE_kwDONRUzM84Tm8Bi",
+    "package": "template-files",
+    "publishedAt": "2026-05-25T16:32:00Z",
+    "repository": "template-files",
+    "summary": "Add renovate automerge after 3 weeks",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.13.5",
+    "version": "0.13.5"
+  },
+  {
+    "id": "RE_kwDOQ2OPic4Tm6zo",
+    "package": "starlight-recipes",
+    "publishedAt": "2026-05-25T16:18:55Z",
+    "repository": "starlight-recipes",
+    "summary": "Add static rating frontmatter, as a replacement for the interactive rating functionality.",
+    "url": "https://github.com/trueberryless-org/starlight-recipes/releases/tag/starlight-recipes%400.3.0",
+    "version": "0.3.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84Tm6C6",
+    "package": "template-files",
+    "publishedAt": "2026-05-25T16:08:12Z",
+    "repository": "template-files",
+    "summary": "Include pnpm workspace file in every repository, since pnpm v11 requires allowBuilds",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.13.4",
+    "version": "0.13.4"
+  },
+  {
+    "id": "RE_kwDONRUzM84TTmTV",
+    "package": "template-files",
+    "publishedAt": "2026-05-17T14:39:04Z",
+    "repository": "template-files",
+    "summary": "Limit tangled workflow trigger to main branch and tags.",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.13.1",
+    "version": "0.13.1"
+  },
+  {
+    "id": "RE_kwDONRUzM84S4DLY",
+    "package": "template-files",
+    "publishedAt": "2026-05-02T11:12:47Z",
+    "repository": "template-files",
+    "summary": "Add tangle.yaml workflow to sensible repos which mirrors them to tangled.org",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.13.0",
+    "version": "0.13.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84SZ_4F",
+    "package": "template-files",
+    "publishedAt": "2026-04-14T12:09:06Z",
+    "repository": "template-files",
+    "summary": "Fix definition mistakes in repos.json",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.12.1",
+    "version": "0.12.1"
+  },
+  {
+    "id": "RE_kwDONRUzM84SZ-OB",
+    "package": "template-files",
+    "publishedAt": "2026-04-14T11:53:02Z",
+    "repository": "template-files",
+    "summary": "Add support for package homepages",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.12.0",
+    "version": "0.12.0"
+  },
+  {
+    "id": "RE_kwDOQ2OPic4SN6qi",
+    "package": "starlight-recipes",
+    "publishedAt": "2026-04-06T12:37:36Z",
+    "repository": "starlight-recipes",
+    "summary": "Fix missing /tags/ prefix in footer tag pill links",
+    "url": "https://github.com/trueberryless-org/starlight-recipes/releases/tag/starlight-recipes%400.2.1",
+    "version": "0.2.1"
+  },
+  {
+    "id": "RE_kwDONRUzM84SJ_xI",
+    "package": "template-files",
+    "publishedAt": "2026-04-02T10:36:57Z",
+    "repository": "template-files",
+    "summary": "Rename starlight-contributor-list to astro-contributors",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.11.1",
+    "version": "0.11.1"
+  },
+  {
+    "id": "RE_kwDOQ2OPic4SIL5E",
+    "package": "starlight-recipes",
+    "publishedAt": "2026-04-01T11:04:42Z",
+    "repository": "starlight-recipes",
+    "summary": "Adds support for Astro v6, drops support for Astro v5.",
+    "url": "https://github.com/trueberryless-org/starlight-recipes/releases/tag/starlight-recipes%400.2.0",
+    "version": "0.2.0"
+  },
+  {
+    "id": "RE_kwDOQ2OPic4SIG8r",
+    "package": "starlight-recipes",
+    "publishedAt": "2026-04-01T10:14:06Z",
+    "repository": "starlight-recipes",
+    "summary": "⚠️ Security fix: Do not expose STARLIGHT_RECIPES_RATING_SECRET secret to the client.",
+    "url": "https://github.com/trueberryless-org/starlight-recipes/releases/tag/starlight-recipes%400.1.1",
+    "version": "0.1.1"
+  },
+  {
+    "id": "RE_kwDOQ2OPic4SG_-I",
+    "package": "starlight-recipes",
+    "publishedAt": "2026-03-31T17:49:11Z",
+    "repository": "starlight-recipes",
+    "summary": "Initial public release.",
+    "url": "https://github.com/trueberryless-org/starlight-recipes/releases/tag/starlight-recipes%400.1.0",
+    "version": "0.1.0"
+  },
+  {
+    "id": "RE_kwDONVHsm84RwU9n",
+    "package": "starlight-latest-version",
+    "publishedAt": "2026-03-17T10:52:34Z",
+    "repository": "starlight-latest-version",
+    "summary": "Adds support for Astro v6, drops support for Astro v5.",
+    "url": "https://github.com/trueberryless-org/starlight-latest-version/releases/tag/starlight-latest-version%400.7.0",
+    "version": "0.7.0"
+  },
+  {
+    "id": "RE_kwDONKugD84RwDOx",
+    "package": "astro-contributors",
+    "publishedAt": "2026-03-17T07:31:53Z",
+    "repository": "astro-contributors",
+    "summary": "Add support for All Contributors standard. Check out the new component documentation for details.",
+    "url": "https://github.com/trueberryless-org/astro-contributors/releases/tag/astro-contributors%400.8.0",
+    "version": "0.8.0"
+  },
+  {
+    "id": "RE_kwDONCzicM4Rvh_s",
+    "package": "starlight-sidebar-topics-dropdown",
+    "publishedAt": "2026-03-16T21:03:27Z",
+    "repository": "starlight-sidebar-topics-dropdown",
+    "summary": "Adds support for Astro v6, drops support for Astro v5.",
+    "url": "https://github.com/trueberryless-org/starlight-sidebar-topics-dropdown/releases/tag/starlight-sidebar-topics-dropdown%400.6.0",
+    "version": "0.6.0"
+  },
+  {
+    "id": "RE_kwDONKugD84RvhL_",
+    "package": "astro-contributors",
+    "publishedAt": "2026-03-16T20:53:23Z",
+    "repository": "astro-contributors",
+    "summary": "Adds support for Astro v6, drops support for Astro v5.",
+    "url": "https://github.com/trueberryless-org/astro-contributors/releases/tag/astro-contributors%400.7.0",
+    "version": "0.7.0"
+  },
+  {
+    "id": "RE_kwDOOVA_Yc4RvgbH",
+    "package": "starlight-theme-next",
+    "publishedAt": "2026-03-16T20:43:54Z",
+    "repository": "starlight-theme-next",
+    "summary": "Adds support for Astro v6, drops support for Astro v5.",
+    "url": "https://github.com/trueberryless-org/starlight-theme-next/releases/tag/starlight-theme-next%400.4.0",
+    "version": "0.4.0"
+  },
+  {
+    "id": "RE_kwDONkEDbs4RvgYm",
+    "package": "starlight-sidebar-swipe",
+    "publishedAt": "2026-03-16T20:43:21Z",
+    "repository": "starlight-sidebar-swipe",
+    "summary": "Adds support for Astro v6, drops support for Astro v5.",
+    "url": "https://github.com/trueberryless-org/starlight-sidebar-swipe/releases/tag/starlight-sidebar-swipe%400.2.0",
+    "version": "0.2.0"
+  },
+  {
+    "id": "RE_kwDONKugD84Ruwop",
+    "package": "astro-contributors",
+    "publishedAt": "2026-03-16T13:21:05Z",
+    "repository": "astro-contributors",
+    "summary": "Introduce flexible focus color to allow better control in raw Astro sites.",
+    "url": "https://github.com/trueberryless-org/astro-contributors/releases/tag/astro-contributors%400.6.0",
+    "version": "0.6.0"
+  },
+  {
+    "id": "RE_kwDONKugD84Rus3L",
+    "package": "astro-contributors",
+    "publishedAt": "2026-03-16T12:46:01Z",
+    "repository": "astro-contributors",
+    "summary": "Rename package from starlight-contributor-list to astro-contributors",
+    "url": "https://github.com/trueberryless-org/astro-contributors/releases/tag/astro-contributors%400.5.0",
+    "version": "0.5.0"
+  },
+  {
+    "id": "RE_kwDONKugD84Ruq7Z",
+    "package": "starlight-contributor-list",
+    "publishedAt": "2026-03-16T12:25:45Z",
+    "repository": "astro-contributors",
+    "summary": "Remove unnecessary dependencies, peer dependencies and dev dependencies",
+    "url": "https://github.com/trueberryless-org/astro-contributors/releases/tag/starlight-contributor-list%400.4.0",
+    "version": "0.4.0"
+  },
+  {
+    "id": "RE_kwDOMES_H84Rum-y",
+    "package": "starlight-view-modes",
+    "publishedAt": "2026-03-16T11:42:41Z",
+    "repository": "starlight-view-modes",
+    "summary": "Adds support for Astro v6, drops support for Astro v5.",
+    "url": "https://github.com/trueberryless-org/starlight-view-modes/releases/tag/starlight-view-modes%400.13.0",
+    "version": "0.13.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84Rumu6",
+    "package": "template-files",
+    "publishedAt": "2026-03-16T11:40:08Z",
+    "repository": "template-files",
+    "summary": "Redo labeler changes as they got reverted by sync.",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.10.17",
+    "version": "0.10.17"
+  },
+  {
+    "id": "RE_kwDORNQtp84RsTIF",
+    "package": "starlight-theme-rose-pine",
+    "publishedAt": "2026-03-13T18:26:05Z",
+    "repository": "starlight-theme-rose-pine",
+    "summary": "Adds support for Astro v6, drops support for Astro v5.",
+    "url": "https://github.com/trueberryless-org/starlight-theme-rose-pine/releases/tag/starlight-theme-rose-pine%400.2.0",
+    "version": "0.2.0"
+  },
+  {
+    "id": "RE_kwDONMwaYM4RsRNH",
+    "package": "starlight-cooler-credit",
+    "publishedAt": "2026-03-13T18:03:26Z",
+    "repository": "starlight-cooler-credit",
+    "summary": "Adds support for Astro v6, drops support for Astro v5.",
+    "url": "https://github.com/trueberryless-org/starlight-cooler-credit/releases/tag/starlight-cooler-credit%400.6.0",
+    "version": "0.6.0"
+  },
+  {
+    "id": "RE_kwDONJ5zGc4RsQJI",
+    "package": "starlight-plugins-docs-components",
+    "publishedAt": "2026-03-13T17:50:49Z",
+    "repository": "starlight-plugins-docs-components",
+    "summary": "Adds support for Astro v6, drops support for Astro v5.",
+    "url": "https://github.com/trueberryless-org/starlight-plugins-docs-components/releases/tag/starlight-plugins-docs-components%400.5.0",
+    "version": "0.5.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84RokA-",
+    "package": "template-files",
+    "publishedAt": "2026-03-11T19:40:54Z",
+    "repository": "template-files",
+    "summary": "Make labeler configuration more robust",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.10.16",
+    "version": "0.10.16"
+  },
+  {
+    "id": "RE_kwDONVHsm84RohaL",
+    "package": "starlight-latest-version",
+    "publishedAt": "2026-03-11T19:13:00Z",
+    "repository": "starlight-latest-version",
+    "summary": "Clean up package metadata.",
+    "url": "https://github.com/trueberryless-org/starlight-latest-version/releases/tag/starlight-latest-version%400.6.1",
+    "version": "0.6.1"
+  },
+  {
+    "id": "RE_kwDORNQtp84RcUr-",
+    "package": "starlight-theme-rose-pine",
+    "publishedAt": "2026-03-03T17:04:16Z",
+    "repository": "starlight-theme-rose-pine",
+    "summary": "Lower Starlight peer dependency to >=0.36",
+    "url": "https://github.com/trueberryless-org/starlight-theme-rose-pine/releases/tag/starlight-theme-rose-pine%400.1.2",
+    "version": "0.1.2"
+  },
+  {
+    "id": "RE_kwDORNQtp84Rb74F",
+    "package": "starlight-theme-rose-pine",
+    "publishedAt": "2026-03-03T13:08:50Z",
+    "repository": "starlight-theme-rose-pine",
+    "summary": "Fix accessibility issue with badge text color contrast.",
+    "url": "https://github.com/trueberryless-org/starlight-theme-rose-pine/releases/tag/starlight-theme-rose-pine%400.1.1",
+    "version": "0.1.1"
+  },
+  {
+    "id": "RE_kwDONRUzM84RaKfA",
+    "package": "template-files",
+    "publishedAt": "2026-03-02T13:21:30Z",
+    "repository": "template-files",
+    "summary": "Add Starlight Rose Pine",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.10.15",
+    "version": "0.10.15"
+  },
+  {
+    "id": "RE_kwDONCzicM4RLl3j",
+    "package": "starlight-sidebar-topics-dropdown",
+    "publishedAt": "2026-02-19T14:52:17Z",
+    "repository": "starlight-sidebar-topics-dropdown",
+    "summary": "Fixed bug introduced by AI hallucination while trying to add RTL layout support",
+    "url": "https://github.com/trueberryless-org/starlight-sidebar-topics-dropdown/releases/tag/starlight-sidebar-topics-dropdown%400.5.4",
+    "version": "0.5.4"
+  },
+  {
+    "id": "RE_kwDONCzicM4RLW6W",
+    "package": "starlight-sidebar-topics-dropdown",
+    "publishedAt": "2026-02-19T12:47:26Z",
+    "repository": "starlight-sidebar-topics-dropdown",
+    "summary": "Add support for RTL languages by fixing the CSS styles.",
+    "url": "https://github.com/trueberryless-org/starlight-sidebar-topics-dropdown/releases/tag/starlight-sidebar-topics-dropdown%400.5.3",
+    "version": "0.5.3"
+  },
+  {
+    "id": "RE_kwDONRUzM84Q3Pz7",
+    "package": "template-files",
+    "publishedAt": "2026-02-04T11:04:18Z",
+    "repository": "template-files",
+    "summary": "Add npmx-digest to repos",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.10.14",
+    "version": "0.10.14"
+  },
+  {
+    "id": "RE_kwDONKugD84QbFYa",
+    "package": "starlight-contributor-list",
+    "publishedAt": "2026-01-09T15:41:10Z",
+    "repository": "astro-contributors",
+    "summary": "Fix keyboard focus accessibility issues.",
+    "url": "https://github.com/trueberryless-org/astro-contributors/releases/tag/starlight-contributor-list%400.3.2",
+    "version": "0.3.2"
+  },
+  {
+    "id": "RE_kwDONRUzM84QaEJG",
+    "package": "template-files",
+    "publishedAt": "2026-01-08T18:31:18Z",
+    "repository": "template-files",
+    "summary": "Add Starlight Recipes repository",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.10.13",
+    "version": "0.10.13"
+  },
+  {
+    "id": "RE_kwDONRUzM84QZqnH",
+    "package": "template-files",
+    "publishedAt": "2026-01-08T13:01:58Z",
+    "repository": "template-files",
+    "summary": "Clean up trueberryless repo",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.10.12",
+    "version": "0.10.12"
+  },
+  {
+    "id": "RE_kwDONRUzM84QZqIF",
+    "package": "template-files",
+    "publishedAt": "2026-01-08T12:55:02Z",
+    "repository": "template-files",
+    "summary": "Remove release-image-generator changeset sync",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.10.11",
+    "version": "0.10.11"
+  },
+  {
+    "id": "RE_kwDONRUzM84QZoYz",
+    "package": "template-files",
+    "publishedAt": "2026-01-08T12:35:37Z",
+    "repository": "template-files",
+    "summary": "Manually update prettier-sort plugin",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.10.10",
+    "version": "0.10.10"
+  },
+  {
+    "id": "RE_kwDONVHsm84QFeA0",
+    "package": "starlight-latest-version",
+    "publishedAt": "2025-12-12T12:20:17Z",
+    "repository": "starlight-latest-version",
+    "summary": "Rename package from starlight-plugin-show-latest-version to starlight-latest-version.",
+    "url": "https://github.com/trueberryless-org/starlight-latest-version/releases/tag/starlight-latest-version%400.6.0",
+    "version": "0.6.0"
+  },
+  {
+    "id": "RE_kwDOMES_H84QBWVG",
+    "package": "starlight-view-modes",
+    "publishedAt": "2025-12-09T16:10:37Z",
+    "repository": "starlight-view-modes",
+    "summary": "⚠️ BREAKING CHANGE: The minimum supported version of Starlight is now version 0.34.0. But this time I really bump the peer dependency 😅",
+    "url": "https://github.com/trueberryless-org/starlight-view-modes/releases/tag/starlight-view-modes%400.12.0",
+    "version": "0.12.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84P8cIb",
+    "package": "template-files",
+    "publishedAt": "2025-12-04T16:37:13Z",
+    "repository": "template-files",
+    "summary": "Update releases repository to new recent-releases repository.",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.10.7",
+    "version": "0.10.7"
+  },
+  {
+    "id": "RE_kwDOOMCKEM4P3jX_",
+    "package": "starlight-toc-overview-customizer",
+    "publishedAt": "2025-11-30T17:40:05Z",
+    "repository": "starlight-toc-overview-customizer",
+    "summary": "Add deprication notice to plugin",
+    "url": "https://github.com/trueberryless-org/starlight-toc-overview-customizer/releases/tag/starlight-toc-overview-customizer%400.1.2",
+    "version": "0.1.2"
+  },
+  {
+    "id": "RE_kwDONmIG6M4P3jS4",
+    "package": "starlight-spell-checker",
+    "publishedAt": "2025-11-30T17:34:28Z",
+    "repository": "starlight-spell-checker",
+    "summary": "Add deprication notice in plugin",
+    "url": "https://github.com/trueberryless-org/starlight-spell-checker/releases/tag/starlight-spell-checker%400.2.3",
+    "version": "0.2.3"
+  },
+  {
+    "id": "RE_kwDONMwaYM4PxgL3",
+    "package": "starlight-cooler-credit",
+    "publishedAt": "2025-11-23T18:16:22Z",
+    "repository": "starlight-cooler-credit",
+    "summary": "⚠️ Potential breaking change: Remove flexibility components that allowed to create custom content in the table of contents above and below the list of headings.",
+    "url": "https://github.com/trueberryless-org/starlight-cooler-credit/releases/tag/starlight-cooler-credit%400.5.0",
+    "version": "0.5.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84Pmm_v",
+    "package": "template-files",
+    "publishedAt": "2025-11-12T14:38:53Z",
+    "repository": "template-files",
+    "summary": "Adapt repo config to Release Image Generator Migration to Astro",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.10.6",
+    "version": "0.10.6"
+  },
+  {
+    "id": "RE_kwDOOB8SOM4PjWC_",
+    "package": "release-image-generator",
+    "publishedAt": "2025-11-09T12:46:46Z",
+    "repository": "release-image-generator",
+    "summary": "⚠️ Breaking change: Move the image generation API endpoint from / to /api/generateImage. This means that you now need to add this path to your request:",
+    "url": "https://github.com/trueberryless-org/release-image-generator/releases/tag/release-image-generator%400.5.0",
+    "version": "0.5.0"
+  },
+  {
+    "id": "RE_kwDOMES_H84PcRBP",
+    "package": "starlight-view-modes",
+    "publishedAt": "2025-11-02T10:36:09Z",
+    "repository": "starlight-view-modes",
+    "summary": "Setups trusted publishing using OpenID Connect (OIDC) authentication — no code changes.",
+    "url": "https://github.com/trueberryless-org/starlight-view-modes/releases/tag/starlight-view-modes%400.11.1",
+    "version": "0.11.1"
+  },
+  {
+    "id": "RE_kwDOOMCKEM4PcQ0R",
+    "package": "starlight-toc-overview-customizer",
+    "publishedAt": "2025-11-02T10:19:47Z",
+    "repository": "starlight-toc-overview-customizer",
+    "summary": "Setups trusted publishing using OpenID Connect (OIDC) authentication — no code changes.",
+    "url": "https://github.com/trueberryless-org/starlight-toc-overview-customizer/releases/tag/starlight-toc-overview-customizer%400.1.1",
+    "version": "0.1.1"
+  },
+  {
+    "id": "RE_kwDOOVA_Yc4PcQz7",
+    "package": "starlight-theme-next",
+    "publishedAt": "2025-11-02T10:19:14Z",
+    "repository": "starlight-theme-next",
+    "summary": "Setups trusted publishing using OpenID Connect (OIDC) authentication — no code changes.",
+    "url": "https://github.com/trueberryless-org/starlight-theme-next/releases/tag/starlight-theme-next%400.3.3",
+    "version": "0.3.3"
+  },
+  {
+    "id": "RE_kwDONCzicM4PcQXX",
+    "package": "starlight-sidebar-topics-dropdown",
+    "publishedAt": "2025-11-02T10:05:27Z",
+    "repository": "starlight-sidebar-topics-dropdown",
+    "summary": "Setups trusted publishing using OpenID Connect (OIDC) authentication — no code changes.",
+    "url": "https://github.com/trueberryless-org/starlight-sidebar-topics-dropdown/releases/tag/starlight-sidebar-topics-dropdown%400.5.2",
+    "version": "0.5.2"
+  },
+  {
+    "id": "RE_kwDONkEDbs4PcQWM",
+    "package": "starlight-sidebar-swipe",
+    "publishedAt": "2025-11-02T10:03:50Z",
+    "repository": "starlight-sidebar-swipe",
+    "summary": "Setups trusted publishing using OpenID Connect (OIDC) authentication — no code changes.",
+    "url": "https://github.com/trueberryless-org/starlight-sidebar-swipe/releases/tag/starlight-sidebar-swipe%400.1.1",
+    "version": "0.1.1"
+  },
+  {
+    "id": "RE_kwDOOHfQ6s4PcQVu",
+    "package": "starlight-save-file-component",
+    "publishedAt": "2025-11-02T10:03:00Z",
+    "repository": "starlight-save-file-component",
+    "summary": "Setups trusted publishing using OpenID Connect (OIDC) authentication — no code changes.",
+    "url": "https://github.com/trueberryless-org/starlight-save-file-component/releases/tag/starlight-save-file-component%400.1.1",
+    "version": "0.1.1"
+  },
+  {
+    "id": "RE_kwDONJ5zGc4PcQSM",
+    "package": "starlight-plugins-docs-components",
+    "publishedAt": "2025-11-02T09:58:08Z",
+    "repository": "starlight-plugins-docs-components",
+    "summary": "Setups trusted publishing using OpenID Connect (OIDC) authentication — no code changes.",
+    "url": "https://github.com/trueberryless-org/starlight-plugins-docs-components/releases/tag/starlight-plugins-docs-components%400.4.3",
+    "version": "0.4.3"
+  },
+  {
+    "id": "RE_kwDONVHsm84PcP82",
+    "package": "starlight-plugin-show-latest-version",
+    "publishedAt": "2025-11-02T09:25:42Z",
+    "repository": "starlight-latest-version",
+    "summary": "Setups trusted publishing using OpenID Connect (OIDC) authentication — no code changes.",
+    "url": "https://github.com/trueberryless-org/starlight-latest-version/releases/tag/starlight-plugin-show-latest-version%400.5.1",
+    "version": "0.5.1"
+  },
+  {
+    "id": "RE_kwDONMwaYM4PcP5p",
+    "package": "starlight-cooler-credit",
+    "publishedAt": "2025-11-02T09:20:30Z",
+    "repository": "starlight-cooler-credit",
+    "summary": "Setups trusted publishing using OpenID Connect (OIDC) authentication — no code changes.",
+    "url": "https://github.com/trueberryless-org/starlight-cooler-credit/releases/tag/starlight-cooler-credit%400.4.1",
+    "version": "0.4.1"
+  },
+  {
+    "id": "RE_kwDONKugD84PcP3x",
+    "package": "starlight-contributor-list",
+    "publishedAt": "2025-11-02T09:17:55Z",
+    "repository": "astro-contributors",
+    "summary": "Setups trusted publishing using OpenID Connect (OIDC) authentication — no code changes.",
+    "url": "https://github.com/trueberryless-org/astro-contributors/releases/tag/starlight-contributor-list%400.3.1",
+    "version": "0.3.1"
+  },
+  {
+    "id": "RE_kwDONmIG6M4PbvjU",
+    "package": "starlight-spell-checker",
+    "publishedAt": "2025-10-31T21:50:52Z",
+    "repository": "starlight-spell-checker",
+    "summary": "Try trusted publishing without NPM_TOKEN",
+    "url": "https://github.com/trueberryless-org/starlight-spell-checker/releases/tag/starlight-spell-checker%400.2.2",
+    "version": "0.2.2"
+  },
+  {
+    "id": "RE_kwDONRUzM84PbvbF",
+    "package": "template-files",
+    "publishedAt": "2025-10-31T21:46:22Z",
+    "repository": "template-files",
+    "summary": "Sort summary list alphabetically",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.10.5",
+    "version": "0.10.5"
+  },
+  {
+    "id": "RE_kwDONRUzM84Pbu_C",
+    "package": "template-files",
+    "publishedAt": "2025-10-31T21:32:52Z",
+    "repository": "template-files",
+    "summary": "Update changeset and prettier packages",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.10.4",
+    "version": "0.10.4"
+  },
+  {
+    "id": "RE_kwDONRUzM84Pbuy2",
+    "package": "template-files",
+    "publishedAt": "2025-10-31T21:26:45Z",
+    "repository": "template-files",
+    "summary": "Disable persist credentials on checkout action",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.10.3",
+    "version": "0.10.3"
+  },
+  {
+    "id": "RE_kwDONRUzM84PbuFB",
+    "package": "template-files",
+    "publishedAt": "2025-10-31T21:08:01Z",
+    "repository": "template-files",
+    "summary": "Update GitHub Actions and NPM Dependencies",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.10.2",
+    "version": "0.10.2"
+  },
+  {
+    "id": "RE_kwDONRUzM84Pbt18",
+    "package": "template-files",
+    "publishedAt": "2025-10-31T21:02:07Z",
+    "repository": "template-files",
+    "summary": "Remove NPM_TOKENs from GitHub Actions",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.10.1",
+    "version": "0.10.1"
+  },
+  {
+    "id": "RE_kwDONmIG6M4PbtSk",
+    "package": "starlight-spell-checker",
+    "publishedAt": "2025-10-31T20:48:02Z",
+    "repository": "starlight-spell-checker",
+    "summary": "Setups trusted publishing using OpenID Connect (OIDC) authentication — no code changes.",
+    "url": "https://github.com/trueberryless-org/starlight-spell-checker/releases/tag/starlight-spell-checker%400.2.1",
+    "version": "0.2.1"
+  },
+  {
+    "id": "RE_kwDONRUzM84Pbs6U",
+    "package": "template-files",
+    "publishedAt": "2025-10-31T20:38:54Z",
+    "repository": "template-files",
+    "summary": "Add support for OIDC by upgrading Node versions and removing --provenance flag",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.10.0",
+    "version": "0.10.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84OrfwI",
+    "package": "template-files",
+    "publishedAt": "2025-09-10T19:32:43Z",
+    "repository": "template-files",
+    "summary": "Add Starlight Sidebar Clickable Groups plugin to repos.json",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.9.2",
+    "version": "0.9.2"
+  },
+  {
+    "id": "RE_kwDONRUzM84OoBOr",
+    "package": "template-files",
+    "publishedAt": "2025-09-07T19:43:57Z",
+    "repository": "template-files",
+    "summary": "Group npm updates into one Renovate PR",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.9.1",
+    "version": "0.9.1"
+  },
+  {
+    "id": "RE_kwDONRUzM84OnBdM",
+    "package": "template-files",
+    "publishedAt": "2025-09-05T15:31:33Z",
+    "repository": "template-files",
+    "summary": "Add CODEOWNERS file to all repos (@trueberryless for all files)",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.9.0",
+    "version": "0.9.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84Oc5fO",
+    "package": "template-files",
+    "publishedAt": "2025-08-26T05:41:28Z",
+    "repository": "template-files",
+    "summary": "Skip all CIs and reviews for update PRs",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.8.2",
+    "version": "0.8.2"
+  },
+  {
+    "id": "RE_kwDONRUzM84OclOw",
+    "package": "template-files",
+    "publishedAt": "2025-08-25T20:09:23Z",
+    "repository": "template-files",
+    "summary": "Fix renovate configuration",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.8.1",
+    "version": "0.8.1"
+  },
+  {
+    "id": "RE_kwDONRUzM84OckDy",
+    "package": "template-files",
+    "publishedAt": "2025-08-25T19:44:10Z",
+    "repository": "template-files",
+    "summary": "Add new special file treatment: delete (path still needed nonetheless, although unused)",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.8.0",
+    "version": "0.8.0"
+  },
+  {
+    "id": "RE_kwDOOB8SOM4OPFiV",
+    "package": "release-image-generator",
+    "publishedAt": "2025-08-10T08:51:20Z",
+    "repository": "release-image-generator",
+    "summary": "Add support for choosing the background pattern type. Support patterns: circuitry, concentric, dots, geometry, grid, hexagons, maze, steps, and waves. Read more in the docs.",
+    "url": "https://github.com/trueberryless-org/release-image-generator/releases/tag/release-image-generator%400.4.0",
+    "version": "0.4.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84OFoWj",
+    "package": "template-files",
+    "publishedAt": "2025-07-30T17:36:14Z",
+    "repository": "template-files",
+    "summary": "Fix next theme rename",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.7.2",
+    "version": "0.7.2"
+  },
+  {
+    "id": "RE_kwDOOVA_Yc4OB_KC",
+    "package": "starlight-theme-next",
+    "publishedAt": "2025-07-26T21:05:05Z",
+    "repository": "starlight-theme-next",
+    "summary": "Make mobile toc even more little by decreasing the height to 3.5rem",
+    "url": "https://github.com/trueberryless-org/starlight-theme-next/releases/tag/starlight-theme-next%400.3.2",
+    "version": "0.3.2"
+  },
+  {
+    "id": "RE_kwDOOVA_Yc4OB-5r",
+    "package": "starlight-theme-next",
+    "publishedAt": "2025-07-26T20:54:23Z",
+    "repository": "starlight-theme-next",
+    "summary": "Fix mobile table of contents takes up too much space",
+    "url": "https://github.com/trueberryless-org/starlight-theme-next/releases/tag/starlight-theme-next%400.3.1",
+    "version": "0.3.1"
+  },
+  {
+    "id": "RE_kwDOOVA_Yc4OB4Sa",
+    "package": "starlight-theme-next",
+    "publishedAt": "2025-07-26T13:26:09Z",
+    "repository": "starlight-theme-next",
+    "summary": "Rename NPM package to starlight-theme-next",
+    "url": "https://github.com/trueberryless-org/starlight-theme-next/releases/tag/starlight-theme-next%400.3.0",
+    "version": "0.3.0"
+  },
+  {
+    "id": "RE_kwDOOVA_Yc4N1BM3",
+    "package": "starlight-nextjs-theme",
+    "publishedAt": "2025-07-12T21:51:01Z",
+    "repository": "starlight-theme-next",
+    "summary": "Improve the accessibility of the Table of Contents by highlighting the active heading with the accent color.",
+    "url": "https://github.com/trueberryless-org/starlight-theme-next/releases/tag/starlight-nextjs-theme%400.2.1",
+    "version": "0.2.1"
+  },
+  {
+    "id": "RE_kwDONRUzM84NlCdL",
+    "package": "template-files",
+    "publishedAt": "2025-06-25T19:23:40Z",
+    "repository": "template-files",
+    "summary": "Add Starlight Plugin Translations repo",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.7.0",
+    "version": "0.7.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84Nf6bo",
+    "package": "template-files",
+    "publishedAt": "2025-06-19T14:33:47Z",
+    "repository": "template-files",
+    "summary": "Add true tracker repo to repos.json",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.6.12",
+    "version": "0.6.12"
+  },
+  {
+    "id": "RE_kwDOOB8SOM4NZeGf",
+    "package": "release-image-generator",
+    "publishedAt": "2025-06-12T05:46:12Z",
+    "repository": "release-image-generator",
+    "summary": "Add support for passing primary color",
+    "url": "https://github.com/trueberryless-org/release-image-generator/releases/tag/release-image-generator%400.3.0",
+    "version": "0.3.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84NP9oX",
+    "package": "template-files",
+    "publishedAt": "2025-06-01T16:57:41Z",
+    "repository": "template-files",
+    "summary": "Remove parts of trueberryless repo sync because it is now deployed with Netlify",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.6.11",
+    "version": "0.6.11"
+  },
+  {
+    "id": "RE_kwDONRUzM84NEseO",
+    "package": "template-files",
+    "publishedAt": "2025-05-18T10:56:18Z",
+    "repository": "template-files",
+    "summary": "Add Scroll Indicator repo",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.6.10",
+    "version": "0.6.10"
+  },
+  {
+    "id": "RE_kwDOMES_H84NEfvW",
+    "package": "starlight-view-modes",
+    "publishedAt": "2025-05-17T14:29:20Z",
+    "repository": "starlight-view-modes",
+    "summary": "⚠️ BREAKING CHANGE: The minimum supported version of Starlight is now version 0.34.0.",
+    "url": "https://github.com/trueberryless-org/starlight-view-modes/releases/tag/starlight-view-modes%400.11.0",
+    "version": "0.11.0"
+  },
+  {
+    "id": "RE_kwDOOVA_Yc4NENgQ",
+    "package": "starlight-nextjs-theme",
+    "publishedAt": "2025-05-16T21:58:08Z",
+    "repository": "starlight-theme-next",
+    "summary": "Groups all of the Starlight NextJS theme CSS declarations into a single nextjs cascade layer.",
+    "url": "https://github.com/trueberryless-org/starlight-theme-next/releases/tag/starlight-nextjs-theme%400.2.0",
+    "version": "0.2.0"
+  },
+  {
+    "id": "RE_kwDOOVA_Yc4ND7dL",
+    "package": "starlight-nextjs-theme",
+    "publishedAt": "2025-05-16T15:25:31Z",
+    "repository": "starlight-theme-next",
+    "summary": "Fix width of banner being too large when ToC is not visible",
+    "url": "https://github.com/trueberryless-org/starlight-theme-next/releases/tag/starlight-nextjs-theme%400.1.4",
+    "version": "0.1.4"
+  },
+  {
+    "id": "RE_kwDOOVA_Yc4NDPYy",
+    "package": "starlight-nextjs-theme",
+    "publishedAt": "2025-05-15T20:51:48Z",
+    "repository": "starlight-theme-next",
+    "summary": "Fix margin between social icons, make whitespace between sidebar and content bigger",
+    "url": "https://github.com/trueberryless-org/starlight-theme-next/releases/tag/starlight-nextjs-theme%400.1.3",
+    "version": "0.1.3"
+  },
+  {
+    "id": "RE_kwDONRUzM84M5ID3",
+    "package": "template-files",
+    "publishedAt": "2025-05-03T12:39:11Z",
+    "repository": "template-files",
+    "summary": "Netlify videos, blog and github-activity and upgrade pnpm to 10.10",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.6.9",
+    "version": "0.6.9"
+  },
+  {
+    "id": "RE_kwDOMES_H84Mo-wS",
+    "package": "starlight-view-modes",
+    "publishedAt": "2025-04-13T16:27:47Z",
+    "repository": "starlight-view-modes",
+    "summary": "Make translations more flexible with specific switchTo fields for each mode",
+    "url": "https://github.com/trueberryless-org/starlight-view-modes/releases/tag/starlight-view-modes%400.10.2",
+    "version": "0.10.2"
+  },
+  {
+    "id": "RE_kwDONRUzM84Moybd",
+    "package": "template-files",
+    "publishedAt": "2025-04-12T15:17:31Z",
+    "repository": "template-files",
+    "summary": "Add package.json definitions for Starlight plugins",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.6.8",
+    "version": "0.6.8"
+  },
+  {
+    "id": "RE_kwDONRUzM84MoyQV",
+    "package": "template-files",
+    "publishedAt": "2025-04-12T15:01:19Z",
+    "repository": "template-files",
+    "summary": "Fix deployment and publishing issue with colon\"",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.6.7",
+    "version": "0.6.7"
+  },
+  {
+    "id": "RE_kwDONkEDbs4MowJ0",
+    "package": "starlight-sidebar-swipe",
+    "publishedAt": "2025-04-12T11:53:50Z",
+    "repository": "starlight-sidebar-swipe",
+    "summary": "Initial public release",
+    "url": "https://github.com/trueberryless-org/starlight-sidebar-swipe/releases/tag/starlight-sidebar-swipe%400.1.0",
+    "version": "0.1.0"
+  },
+  {
+    "id": "RE_kwDONMwaYM4MowHE",
+    "package": "starlight-cooler-credit",
+    "publishedAt": "2025-04-12T11:47:38Z",
+    "repository": "starlight-cooler-credit",
+    "summary": "Add Cooler Credit at the bottom of the page if the Table of Contents is not visible",
+    "url": "https://github.com/trueberryless-org/starlight-cooler-credit/releases/tag/starlight-cooler-credit%400.4.0",
+    "version": "0.4.0"
+  },
+  {
+    "id": "RE_kwDOOVA_Yc4MlV8J",
+    "package": "starlight-nextjs-theme",
+    "publishedAt": "2025-04-08T19:27:06Z",
+    "repository": "starlight-theme-next",
+    "summary": "Add keywords and lower peerDep to Starlight 0.30 because it's just CSS",
+    "url": "https://github.com/trueberryless-org/starlight-theme-next/releases/tag/starlight-nextjs-theme%400.1.2",
+    "version": "0.1.2"
+  },
+  {
+    "id": "RE_kwDOMES_H84MjwQV",
+    "package": "starlight-view-modes",
+    "publishedAt": "2025-04-07T09:38:23Z",
+    "repository": "starlight-view-modes",
+    "summary": "Fix search results being undefined",
+    "url": "https://github.com/trueberryless-org/starlight-view-modes/releases/tag/starlight-view-modes%400.10.1",
+    "version": "0.10.1"
+  },
+  {
+    "id": "RE_kwDOOVA_Yc4Mjc4D",
+    "package": "starlight-nextjs-theme",
+    "publishedAt": "2025-04-06T19:18:53Z",
+    "repository": "starlight-theme-next",
+    "summary": "Initial public release",
+    "url": "https://github.com/trueberryless-org/starlight-theme-next/releases/tag/starlight-nextjs-theme%400.1.0",
+    "version": "0.1.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84Mjc0C",
+    "package": "template-files",
+    "publishedAt": "2025-04-06T19:12:59Z",
+    "repository": "template-files",
+    "summary": "Add NextJS theme and remove minimalistic theme sync",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.6.6",
+    "version": "0.6.6"
+  },
+  {
+    "id": "RE_kwDONRUzM84Mhv4w",
+    "package": "template-files",
+    "publishedAt": "2025-04-03T17:12:27Z",
+    "repository": "template-files",
+    "summary": "Rename CI commits from [ci] to ci:",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.6.5",
+    "version": "0.6.5"
+  },
+  {
+    "id": "RE_kwDOMES_H84MgxK1",
+    "package": "starlight-view-modes",
+    "publishedAt": "2025-04-02T17:32:38Z",
+    "repository": "starlight-view-modes",
+    "summary": "Add support for keyboard shortcuts to switch between modes",
+    "url": "https://github.com/trueberryless-org/starlight-view-modes/releases/tag/starlight-view-modes%400.10.0",
+    "version": "0.10.0"
+  },
+  {
+    "id": "RE_kwDONJ5zGc4MeHiY",
+    "package": "starlight-plugins-docs-components",
+    "publishedAt": "2025-03-30T18:57:12Z",
+    "repository": "starlight-plugins-docs-components",
+    "summary": "Remove console logs",
+    "url": "https://github.com/trueberryless-org/starlight-plugins-docs-components/releases/tag/starlight-plugins-docs-components%400.4.2",
+    "version": "0.4.2"
+  },
+  {
+    "id": "RE_kwDONRUzM84MeHfj",
+    "package": "template-files",
+    "publishedAt": "2025-03-30T18:53:04Z",
+    "repository": "template-files",
+    "summary": "Add ignore option to changeset config",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.6.4",
+    "version": "0.6.4"
+  },
+  {
+    "id": "RE_kwDONCzicM4MaODy",
+    "package": "starlight-sidebar-topics-dropdown",
+    "publishedAt": "2025-03-25T17:47:44Z",
+    "repository": "starlight-sidebar-topics-dropdown",
+    "summary": "Update keywords and description",
+    "url": "https://github.com/trueberryless-org/starlight-sidebar-topics-dropdown/releases/tag/starlight-sidebar-topics-dropdown%400.5.1",
+    "version": "0.5.1"
+  },
+  {
+    "id": "RE_kwDOMES_H84MaL6-",
+    "package": "starlight-view-modes",
+    "publishedAt": "2025-03-25T17:14:08Z",
+    "repository": "starlight-view-modes",
+    "summary": "Adds a route data object accessible on Starlight pages using Astro.locals.starlightViewModes containing information about all the modes available on the current page. This can be useful to create custom view modes switchers or just access additional data about the view modes.",
+    "url": "https://github.com/trueberryless-org/starlight-view-modes/releases/tag/starlight-view-modes%400.9.0",
+    "version": "0.9.0"
+  },
+  {
+    "id": "RE_kwDOMES_H84MYFau",
+    "package": "starlight-view-modes",
+    "publishedAt": "2025-03-22T20:53:20Z",
+    "repository": "starlight-view-modes",
+    "summary": "Add support for Astro's base option",
+    "url": "https://github.com/trueberryless-org/starlight-view-modes/releases/tag/starlight-view-modes%400.8.1",
+    "version": "0.8.1"
+  },
+  {
+    "id": "RE_kwDONRUzM84MYFak",
+    "package": "template-files",
+    "publishedAt": "2025-03-22T20:53:06Z",
+    "repository": "template-files",
+    "summary": "Add changeset commit message manipulation to publish action",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.6.3",
+    "version": "0.6.3"
+  },
+  {
+    "id": "RE_kwDONRUzM84MX8st",
+    "package": "template-files",
+    "publishedAt": "2025-03-22T10:15:22Z",
+    "repository": "template-files",
+    "summary": "Remove sync for all files unnecessary for Netlify",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.6.2",
+    "version": "0.6.2"
+  },
+  {
+    "id": "RE_kwDONCzicM4MXg82",
+    "package": "starlight-sidebar-topics-dropdown",
+    "publishedAt": "2025-03-21T16:58:52Z",
+    "repository": "starlight-sidebar-topics-dropdown",
+    "summary": "⚠️ BREAKING CHANGE: This plugin now uses the Starlight Sidebar Topics plugin as a peer dependency. Please follow the upgrade guide below to migrate to the new version.",
+    "url": "https://github.com/trueberryless-org/starlight-sidebar-topics-dropdown/releases/tag/starlight-sidebar-topics-dropdown%400.5.0",
+    "version": "0.5.0"
+  },
+  {
+    "id": "RE_kwDOOMCKEM4MWs0a",
+    "package": "starlight-toc-overview-customizer",
+    "publishedAt": "2025-03-20T20:13:47Z",
+    "repository": "starlight-toc-overview-customizer",
+    "summary": "Initial release",
+    "url": "https://github.com/trueberryless-org/starlight-toc-overview-customizer/releases/tag/starlight-toc-overview-customizer%400.1.0",
+    "version": "0.1.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84MWsa6",
+    "package": "template-files",
+    "publishedAt": "2025-03-20T20:05:41Z",
+    "repository": "template-files",
+    "summary": "Add Starlight Toc Overview Costomizer plugin to repos",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.6.1",
+    "version": "0.6.1"
+  },
+  {
+    "id": "RE_kwDONRUzM84MV8m_",
+    "package": "template-files",
+    "publishedAt": "2025-03-20T07:14:24Z",
+    "repository": "template-files",
+    "summary": "Update GitHub action major versions",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.6.0",
+    "version": "0.6.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84MVPJ5",
+    "package": "template-files",
+    "publishedAt": "2025-03-19T15:38:26Z",
+    "repository": "template-files",
+    "summary": "Add renovate bot and config to all repos",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.5.2",
+    "version": "0.5.2"
+  },
+  {
+    "id": "RE_kwDONKugD84MR43H",
+    "package": "starlight-contributor-list",
+    "publishedAt": "2025-03-15T11:50:47Z",
+    "repository": "astro-contributors",
+    "summary": "Add ignore parameter option",
+    "url": "https://github.com/trueberryless-org/astro-contributors/releases/tag/starlight-contributor-list%400.3.0",
+    "version": "0.3.0"
+  },
+  {
+    "id": "RE_kwDOMES_H84MPyaf",
+    "package": "starlight-view-modes",
+    "publishedAt": "2025-03-13T04:28:32Z",
+    "repository": "starlight-view-modes",
+    "summary": "> ⚠️ DISCLAIMER: This plugin has been overworked completely and now works very different under the hoods. These has many benefits, like huge performance improvements because there is no more JavaScript, but there are still some things which are not supported in this release, namely multilingual websites.",
+    "url": "https://github.com/trueberryless-org/starlight-view-modes/releases/tag/starlight-view-modes%400.8.0",
+    "version": "0.8.0"
+  },
+  {
+    "id": "RE_kwDOOHfQ6s4MPWME",
+    "package": "starlight-save-file-component",
+    "publishedAt": "2025-03-12T16:21:46Z",
+    "repository": "starlight-save-file-component",
+    "summary": "Initial release",
+    "url": "https://github.com/trueberryless-org/starlight-save-file-component/releases/tag/starlight-save-file-component%400.1.0",
+    "version": "0.1.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84MMUbZ",
+    "package": "template-files",
+    "publishedAt": "2025-03-08T23:18:58Z",
+    "repository": "template-files",
+    "summary": "Add new Download Link project to repos.json",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.5.1",
+    "version": "0.5.1"
+  },
+  {
+    "id": "RE_kwDONRUzM84MLEl5",
+    "package": "template-files",
+    "publishedAt": "2025-03-06T21:44:26Z",
+    "repository": "template-files",
+    "summary": "Add sort import order and Astro integration to prettier",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.5.0",
+    "version": "0.5.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84MKYTW",
+    "package": "template-files",
+    "publishedAt": "2025-03-06T08:17:20Z",
+    "repository": "template-files",
+    "summary": "Add package name to changeset commit message",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.4.2",
+    "version": "0.4.2"
+  },
+  {
+    "id": "RE_kwDONRUzM84MKCs0",
+    "package": "template-files",
+    "publishedAt": "2025-03-05T20:45:06Z",
+    "repository": "template-files",
+    "summary": "Add truzzles, marketing & withastr-github-comment-templates repos",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.4.1",
+    "version": "0.4.1"
+  },
+  {
+    "id": "RE_kwDONRUzM84MKBOq",
+    "package": "template-files",
+    "publishedAt": "2025-03-05T20:10:50Z",
+    "repository": "template-files",
+    "summary": "Add \"add-additional-lines\" logic. But be careful: DO NOT use it on any files where inline contents will change (e.g. the change a folder in a path) because then the \"comm\" command wrongly interprets the output. Reference: https://chatgpt.com/share/67c8ae80-aa18-800b-9b88-a62393ddbe08",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.4.0",
+    "version": "0.4.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84MJ3Jn",
+    "package": "template-files",
+    "publishedAt": "2025-03-05T16:37:09Z",
+    "repository": "template-files",
+    "summary": "Ignore ports, containerPort and targetPort in manifest special handling",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.3.0",
+    "version": "0.3.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84MJzSG",
+    "package": "template-files",
+    "publishedAt": "2025-03-05T15:37:32Z",
+    "repository": "template-files",
+    "summary": "Every changeset commit will include the version of the package in all repos",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.2.0",
+    "version": "0.2.0"
+  },
+  {
+    "id": "RE_kwDOOB8SOM4MJiO2",
+    "package": "release-image-generator",
+    "publishedAt": "2025-03-05T10:31:41Z",
+    "repository": "release-image-generator",
+    "summary": "Fix fonts. Reason not working: Git + Windows did not track file rename to lowercase, so ttf files could not be found.",
+    "url": "https://github.com/trueberryless-org/release-image-generator/releases/tag/release-image-generator%400.2.2",
+    "version": "0.2.2"
+  },
+  {
+    "id": "RE_kwDOOB8SOM4MJJV2",
+    "package": "release-image-generator",
+    "publishedAt": "2025-03-04T23:03:49Z",
+    "repository": "release-image-generator",
+    "summary": "Try making font loader more secure (because fonts are not working)",
+    "url": "https://github.com/trueberryless-org/release-image-generator/releases/tag/release-image-generator%400.2.1",
+    "version": "0.2.1"
+  },
+  {
+    "id": "RE_kwDOOB8SOM4MJINe",
+    "package": "release-image-generator",
+    "publishedAt": "2025-03-04T22:33:51Z",
+    "repository": "release-image-generator",
+    "summary": "⚠️ BREAKING CHANGE: If no text is passed as a parameter, no text is displayed in the image. Default text is no text.",
+    "url": "https://github.com/trueberryless-org/release-image-generator/releases/tag/release-image-generator%400.2.0",
+    "version": "0.2.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84MIjOM",
+    "package": "template-files",
+    "publishedAt": "2025-03-04T11:11:29Z",
+    "repository": "template-files",
+    "summary": "Add releases repo",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.1.18",
+    "version": "0.1.18"
+  },
+  {
+    "id": "RE_kwDOOB8SOM4MHSTF",
+    "package": "release-image-generator",
+    "publishedAt": "2025-03-02T19:55:12Z",
+    "repository": "release-image-generator",
+    "summary": "Initial release",
+    "url": "https://github.com/trueberryless-org/release-image-generator/releases/tag/release-image-generator%400.1.0",
+    "version": "0.1.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84MHRmi",
+    "package": "template-files",
+    "publishedAt": "2025-03-02T18:37:57Z",
+    "repository": "template-files",
+    "summary": "Add DotNet Support: Release Image Generator",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.1.17",
+    "version": "0.1.17"
+  },
+  {
+    "id": "RE_kwDONVHsm84MCQmC",
+    "package": "starlight-plugin-show-latest-version",
+    "publishedAt": "2025-02-23T19:06:25Z",
+    "repository": "starlight-latest-version",
+    "summary": "⚠️ BREAKING CHANGE: If you set showInSiteTitle to \"deferred\", you will have to enable experimental sessions because the version will be cached for an hour.",
+    "url": "https://github.com/trueberryless-org/starlight-latest-version/releases/tag/starlight-plugin-show-latest-version%400.5.0",
+    "version": "0.5.0"
+  },
+  {
+    "id": "RE_kwDONmIG6M4MCPgZ",
+    "package": "starlight-spell-checker",
+    "publishedAt": "2025-02-23T17:20:33Z",
+    "repository": "starlight-spell-checker",
+    "summary": "⚠️ BREAKING CHANGE: The minimum supported version of Starlight is now version 0.32.0.",
+    "url": "https://github.com/trueberryless-org/starlight-spell-checker/releases/tag/starlight-spell-checker%400.2.0",
+    "version": "0.2.0"
+  },
+  {
+    "id": "RE_kwDONCzicM4MBo9C",
+    "package": "starlight-sidebar-topics-dropdown",
+    "publishedAt": "2025-02-21T18:36:47Z",
+    "repository": "starlight-sidebar-topics-dropdown",
+    "summary": "Small fixes and docs changes",
+    "url": "https://github.com/trueberryless-org/starlight-sidebar-topics-dropdown/releases/tag/starlight-sidebar-topics-dropdown%400.4.1",
+    "version": "0.4.1"
+  },
+  {
+    "id": "RE_kwDONMwaYM4MBo2d",
+    "package": "starlight-cooler-credit",
+    "publishedAt": "2025-02-21T18:33:59Z",
+    "repository": "starlight-cooler-credit",
+    "summary": "Small fixes in docs and throw Warnings",
+    "url": "https://github.com/trueberryless-org/starlight-cooler-credit/releases/tag/starlight-cooler-credit%400.3.1",
+    "version": "0.3.1"
+  },
+  {
+    "id": "RE_kwDONCzicM4MBoA7",
+    "package": "starlight-sidebar-topics-dropdown",
+    "publishedAt": "2025-02-21T18:21:15Z",
+    "repository": "starlight-sidebar-topics-dropdown",
+    "summary": "⚠️ BREAKING CHANGE: The Starlight Sidebar Topics Dropdown plugin no longer provides the same \"Unnested Sidebar\" configuration like before. Please adapt your astro.config.mjs with the up-to-date guide on how to configure a \"Unnested Sidebar\".",
+    "url": "https://github.com/trueberryless-org/starlight-sidebar-topics-dropdown/releases/tag/starlight-sidebar-topics-dropdown%400.4.0",
+    "version": "0.4.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84MBjUC",
+    "package": "template-files",
+    "publishedAt": "2025-02-21T16:58:32Z",
+    "repository": "template-files",
+    "summary": "Add subtle-top-level-items-repo to repos.json",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.1.16",
+    "version": "0.1.16"
+  },
+  {
+    "id": "RE_kwDONMwaYM4MBblH",
+    "package": "starlight-cooler-credit",
+    "publishedAt": "2025-02-21T15:18:29Z",
+    "repository": "starlight-cooler-credit",
+    "summary": "⚠️ BREAKING CHANGE: The minimum supported version of Starlight is now version 0.32.0.",
+    "url": "https://github.com/trueberryless-org/starlight-cooler-credit/releases/tag/starlight-cooler-credit%400.3.0",
+    "version": "0.3.0"
+  },
+  {
+    "id": "RE_kwDONVHsm84MBFw_",
+    "package": "starlight-plugin-show-latest-version",
+    "publishedAt": "2025-02-21T08:41:20Z",
+    "repository": "starlight-latest-version",
+    "summary": "⚠️ BREAKING CHANGE: The minimum supported version of Starlight is now version 0.32.0.",
+    "url": "https://github.com/trueberryless-org/starlight-latest-version/releases/tag/starlight-plugin-show-latest-version%400.4.0",
+    "version": "0.4.0"
+  },
+  {
+    "id": "RE_kwDONKugD84L_bSt",
+    "package": "starlight-contributor-list",
+    "publishedAt": "2025-02-19T12:57:51Z",
+    "repository": "astro-contributors",
+    "summary": "Update to Starlight 0.32",
+    "url": "https://github.com/trueberryless-org/astro-contributors/releases/tag/starlight-contributor-list%400.2.1",
+    "version": "0.2.1"
+  },
+  {
+    "id": "RE_kwDONJ5zGc4L9_rj",
+    "package": "starlight-plugins-docs-components",
+    "publishedAt": "2025-02-17T22:40:35Z",
+    "repository": "starlight-plugins-docs-components",
+    "summary": "Fix Dockerfile",
+    "url": "https://github.com/trueberryless-org/starlight-plugins-docs-components/releases/tag/starlight-plugins-docs-components%400.4.1",
+    "version": "0.4.1"
+  },
+  {
+    "id": "RE_kwDONJ5zGc4L96k-",
+    "package": "starlight-plugins-docs-components",
+    "publishedAt": "2025-02-17T19:54:12Z",
+    "repository": "starlight-plugins-docs-components",
+    "summary": "⚠️ BREAKING CHANGE: The minimum supported version of Starlight is now version 0.32.0.",
+    "url": "https://github.com/trueberryless-org/starlight-plugins-docs-components/releases/tag/starlight-plugins-docs-components%400.4.0",
+    "version": "0.4.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84L8WNf",
+    "package": "template-files",
+    "publishedAt": "2025-02-14T11:48:01Z",
+    "repository": "template-files",
+    "summary": "Add Starlight Automatic Overview Pages",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.1.15",
+    "version": "0.1.15"
+  },
+  {
+    "id": "RE_kwDONRUzM84L4tRk",
+    "package": "template-files",
+    "publishedAt": "2025-02-10T16:01:12Z",
+    "repository": "template-files",
+    "summary": "Add GitHub Activity repo to repos.json",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.1.14",
+    "version": "0.1.14"
+  },
+  {
+    "id": "RE_kwDONVHsm84LxEV4",
+    "package": "starlight-plugin-show-latest-version",
+    "publishedAt": "2025-01-29T17:09:40Z",
+    "repository": "starlight-latest-version",
+    "summary": "Prevents the header title from being translated by automatic translation systems.",
+    "url": "https://github.com/trueberryless-org/starlight-latest-version/releases/tag/starlight-plugin-show-latest-version%400.3.1",
+    "version": "0.3.1"
+  },
+  {
+    "id": "RE_kwDONRUzM84Lpzmo",
+    "package": "template-files",
+    "publishedAt": "2025-01-19T11:18:29Z",
+    "repository": "template-files",
+    "summary": "Add Starlight Minimalistic Theme",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.1.13",
+    "version": "0.1.13"
+  },
+  {
+    "id": "RE_kwDONmIG6M4LpSRX",
+    "package": "starlight-spell-checker",
+    "publishedAt": "2025-01-17T16:49:54Z",
+    "repository": "starlight-spell-checker",
+    "summary": "Initial public release.",
+    "url": "https://github.com/trueberryless-org/starlight-spell-checker/releases/tag/starlight-spell-checker%400.1.0",
+    "version": "0.1.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84LjisP",
+    "package": "template-files",
+    "publishedAt": "2025-01-09T09:58:58Z",
+    "repository": "template-files",
+    "summary": "Add videos repository to repos.json.",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.1.12",
+    "version": "0.1.12"
+  },
+  {
+    "id": "RE_kwDONMwaYM4LhEYm",
+    "package": "starlight-cooler-credit",
+    "publishedAt": "2025-01-05T18:38:57Z",
+    "repository": "starlight-cooler-credit",
+    "summary": "Add Spanish language translation",
+    "url": "https://github.com/trueberryless-org/starlight-cooler-credit/releases/tag/starlight-cooler-credit%400.2.3",
+    "version": "0.2.3"
+  },
+  {
+    "id": "RE_kwDONRUzM84LhBoU",
+    "package": "template-files",
+    "publishedAt": "2025-01-05T13:22:45Z",
+    "repository": "template-files",
+    "summary": "Add Starlight Spell Checker Plugin to repos.json",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.1.11",
+    "version": "0.1.11"
+  },
+  {
+    "id": "RE_kwDONRUzM84Lf3bS",
+    "package": "template-files",
+    "publishedAt": "2025-01-02T09:55:52Z",
+    "repository": "template-files",
+    "summary": "Use GitHub App trueberryless-org to make all CI",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.1.10",
+    "version": "0.1.10"
+  },
+  {
+    "id": "RE_kwDONVHsm84LfqLD",
+    "package": "starlight-plugin-show-latest-version",
+    "publishedAt": "2025-01-01T13:57:42Z",
+    "repository": "starlight-latest-version",
+    "summary": "Use server:defer in the SiteTitle.astro override component if showInSiteTitle is set to \"deferred\".",
+    "url": "https://github.com/trueberryless-org/starlight-latest-version/releases/tag/starlight-plugin-show-latest-version%400.3.0",
+    "version": "0.3.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84LfKR7",
+    "package": "template-files",
+    "publishedAt": "2024-12-30T18:39:53Z",
+    "repository": "template-files",
+    "summary": "Add Starlight Sidebar Swipe Plugin to repos.json",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.1.9",
+    "version": "0.1.9"
+  },
+  {
+    "id": "RE_kwDONMwaYM4Lezlb",
+    "package": "starlight-cooler-credit",
+    "publishedAt": "2024-12-29T19:55:54Z",
+    "repository": "starlight-cooler-credit",
+    "summary": "Add support for custom image.",
+    "url": "https://github.com/trueberryless-org/starlight-cooler-credit/releases/tag/starlight-cooler-credit%400.2.2",
+    "version": "0.2.2"
+  },
+  {
+    "id": "RE_kwDONVHsm84LcfMQ",
+    "package": "starlight-plugin-show-latest-version",
+    "publishedAt": "2024-12-22T14:39:23Z",
+    "repository": "starlight-latest-version",
+    "summary": "Adds support for Astro v5, drops support for Astro v4.",
+    "url": "https://github.com/trueberryless-org/starlight-latest-version/releases/tag/starlight-plugin-show-latest-version%400.2.0",
+    "version": "0.2.0"
+  },
+  {
+    "id": "RE_kwDONCzicM4LcR4h",
+    "package": "starlight-sidebar-topics-dropdown",
+    "publishedAt": "2024-12-21T08:52:15Z",
+    "repository": "starlight-sidebar-topics-dropdown",
+    "summary": "Adds support for Astro v5, drops support for Astro v4.",
+    "url": "https://github.com/trueberryless-org/starlight-sidebar-topics-dropdown/releases/tag/starlight-sidebar-topics-dropdown%400.3.0",
+    "version": "0.3.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84LcReY",
+    "package": "template-files",
+    "publishedAt": "2024-12-21T07:53:06Z",
+    "repository": "template-files",
+    "summary": "Use autofix to automatically format and optimize png images",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.1.8",
+    "version": "0.1.8"
+  },
+  {
+    "id": "RE_kwDONJ5zGc4LcAEn",
+    "package": "starlight-plugins-docs-components",
+    "publishedAt": "2024-12-20T16:40:42Z",
+    "repository": "starlight-plugins-docs-components",
+    "summary": "Adds support for Astro v5, drops support for Astro v4.",
+    "url": "https://github.com/trueberryless-org/starlight-plugins-docs-components/releases/tag/starlight-plugins-docs-components%400.3.0",
+    "version": "0.3.0"
+  },
+  {
+    "id": "RE_kwDONKugD84Lb_4l",
+    "package": "starlight-contributor-list",
+    "publishedAt": "2024-12-20T16:35:18Z",
+    "repository": "astro-contributors",
+    "summary": "Adds support for Astro v5, drops support for Astro v4.",
+    "url": "https://github.com/trueberryless-org/astro-contributors/releases/tag/starlight-contributor-list%400.2.0",
+    "version": "0.2.0"
+  },
+  {
+    "id": "RE_kwDONMwaYM4Lb1er",
+    "package": "starlight-cooler-credit",
+    "publishedAt": "2024-12-20T12:24:18Z",
+    "repository": "starlight-cooler-credit",
+    "summary": "Bump patch version because 0.2.0 was published before and although unpublished within 72h there is still an entry in the time object of the registry",
+    "url": "https://github.com/trueberryless-org/starlight-cooler-credit/releases/tag/starlight-cooler-credit%400.2.1",
+    "version": "0.2.1"
+  },
+  {
+    "id": "RE_kwDONCzicM4LOkFe",
+    "package": "starlight-sidebar-topics-dropdown",
+    "publishedAt": "2024-12-01T20:53:25Z",
+    "repository": "starlight-sidebar-topics-dropdown",
+    "summary": "Improves missing topic error messages by including the slug of the relevant page",
+    "url": "https://github.com/trueberryless-org/starlight-sidebar-topics-dropdown/releases/tag/starlight-sidebar-topics-dropdown%400.2.2",
+    "version": "0.2.2"
+  },
+  {
+    "id": "RE_kwDONRUzM84LOhXv",
+    "package": "template-files",
+    "publishedAt": "2024-12-01T16:36:08Z",
+    "repository": "template-files",
+    "summary": "Sync batch-management-system + refactor .prettierrc & Dockerfile",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.1.7",
+    "version": "0.1.7"
+  },
+  {
+    "id": "RE_kwDONRUzM84LORWm",
+    "package": "template-files",
+    "publishedAt": "2024-11-30T10:58:16Z",
+    "repository": "template-files",
+    "summary": "Add labeler and label manager",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.1.6",
+    "version": "0.1.6"
+  },
+  {
+    "id": "RE_kwDONVHsm84LNNir",
+    "package": "starlight-plugin-show-latest-version",
+    "publishedAt": "2024-11-28T11:49:57Z",
+    "repository": "starlight-latest-version",
+    "summary": "Remove virtual export functionality because it's much harder than I though, maybe not even possible.",
+    "url": "https://github.com/trueberryless-org/starlight-latest-version/releases/tag/starlight-plugin-show-latest-version%400.1.1",
+    "version": "0.1.1"
+  },
+  {
+    "id": "RE_kwDONVHsm84LMzZh",
+    "package": "starlight-plugin-show-latest-version",
+    "publishedAt": "2024-11-27T20:36:14Z",
+    "repository": "starlight-latest-version",
+    "summary": "Release first minor version. Latest version in site title and virtual module export.",
+    "url": "https://github.com/trueberryless-org/starlight-latest-version/releases/tag/starlight-plugin-show-latest-version%400.1.0",
+    "version": "0.1.0"
+  },
+  {
+    "id": "RE_kwDONMwaYM4LLaPk",
+    "package": "starlight-cooler-credit",
+    "publishedAt": "2024-11-26T13:37:26Z",
+    "repository": "starlight-cooler-credit",
+    "summary": "Add Arabic language translation",
+    "url": "https://github.com/trueberryless-org/starlight-cooler-credit/releases/tag/starlight-cooler-credit%400.1.9",
+    "version": "0.1.9"
+  },
+  {
+    "id": "RE_kwDONRUzM84LLWwU",
+    "package": "template-files",
+    "publishedAt": "2024-11-26T12:33:26Z",
+    "repository": "template-files",
+    "summary": "Prettier ignores changeset, Markdown and MDX files",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.1.5",
+    "version": "0.1.5"
+  },
+  {
+    "id": "RE_kwDONRUzM84LK9Q_",
+    "package": "template-files",
+    "publishedAt": "2024-11-25T22:54:53Z",
+    "repository": "template-files",
+    "summary": "Add Mutanuq to repos.json",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.1.4",
+    "version": "0.1.4"
+  },
+  {
+    "id": "RE_kwDONRUzM84LKph7",
+    "package": "template-files",
+    "publishedAt": "2024-11-25T16:32:26Z",
+    "repository": "template-files",
+    "summary": "Add all starlight plugin repos to repos.json",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.1.3",
+    "version": "0.1.3"
+  },
+  {
+    "id": "RE_kwDONRUzM84LKhsh",
+    "package": "template-files",
+    "publishedAt": "2024-11-25T14:30:33Z",
+    "repository": "template-files",
+    "summary": "Add .prettierignore, format.yaml and many other cool stuff tbh",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.1.2",
+    "version": "0.1.2"
+  },
+  {
+    "id": "RE_kwDONRUzM84LKZDE",
+    "package": "template-files",
+    "publishedAt": "2024-11-25T11:46:39Z",
+    "repository": "template-files",
+    "summary": "Add synchronization table to release outputs",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.1.1",
+    "version": "0.1.1"
+  },
+  {
+    "id": "RE_kwDONRUzM84LKCZr",
+    "package": "template-files",
+    "publishedAt": "2024-11-24T22:09:48Z",
+    "repository": "template-files",
+    "summary": "Finish basic sync GitHub Action and many small improvements",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.1.0",
+    "version": "0.1.0"
+  },
+  {
+    "id": "RE_kwDONRUzM84LJgCN",
+    "package": "template-files",
+    "publishedAt": "2024-11-22T19:38:31Z",
+    "repository": "template-files",
+    "summary": "Update publish and deployment actions so they skip release and discord notification if tag already exists",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.0.3",
+    "version": "0.0.3"
+  },
+  {
+    "id": "RE_kwDONRUzM84LGPHI",
+    "package": "template-files",
+    "publishedAt": "2024-11-19T13:09:04Z",
+    "repository": "template-files",
+    "summary": "Add manifest and .changeset files",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.0.2",
+    "version": "0.0.2"
+  },
+  {
+    "id": "RE_kwDONMwaYM4LEmWR",
+    "package": "starlight-cooler-credit",
+    "publishedAt": "2024-11-16T11:01:30Z",
+    "repository": "starlight-cooler-credit",
+    "summary": "Completes ci release",
+    "url": "https://github.com/trueberryless-org/starlight-cooler-credit/releases/tag/starlight-cooler-credit%400.1.8",
+    "version": "0.1.8"
+  },
+  {
+    "id": "RE_kwDONMwaYM4LCY2c",
+    "package": "starlight-cooler-credit",
+    "publishedAt": "2024-11-13T13:03:40Z",
+    "repository": "starlight-cooler-credit",
+    "summary": "Add Japanese language translation.",
+    "url": "https://github.com/trueberryless-org/starlight-cooler-credit/releases/tag/starlight-cooler-credit%400.1.6",
+    "version": "0.1.6"
+  },
+  {
+    "id": "RE_kwDONMwaYM4LBa7r",
+    "package": "starlight-cooler-credit",
+    "publishedAt": "2024-11-12T16:06:08Z",
+    "repository": "starlight-cooler-credit",
+    "summary": "Merge pull request #17 from trueberryless-org/changeset-release/main",
+    "url": "https://github.com/trueberryless-org/starlight-cooler-credit/releases/tag/starlight-cooler-credit%400.1.5",
+    "version": "0.1.5"
+  },
+  {
+    "id": "RE_kwDONMwaYM4LBM7k",
+    "package": "starlight-cooler-credit",
+    "publishedAt": "2024-11-12T12:15:56Z",
+    "repository": "starlight-cooler-credit",
+    "summary": "Adds Russian language translation",
+    "url": "https://github.com/trueberryless-org/starlight-cooler-credit/releases/tag/starlight-cooler-credit%400.1.4",
+    "version": "0.1.4"
+  },
+  {
+    "id": "RE_kwDONMwaYM4LADXQ",
+    "package": "starlight-cooler-credit",
+    "publishedAt": "2024-11-10T14:37:51Z",
+    "repository": "starlight-cooler-credit",
+    "summary": "b073fee: Adds Italian language translation",
+    "url": "https://github.com/trueberryless-org/starlight-cooler-credit/releases/tag/starlight-cooler-credit%400.1.3",
+    "version": "0.1.3"
+  },
+  {
+    "id": "RE_kwDONMwaYM4LADT5",
+    "package": "starlight-cooler-credit",
+    "publishedAt": "2024-11-10T14:31:45Z",
+    "repository": "starlight-cooler-credit",
+    "summary": "3b7d9e6: Adds changeset",
+    "url": "https://github.com/trueberryless-org/starlight-cooler-credit/releases/tag/starlight-cooler-credit%400.1.2",
+    "version": "0.1.2"
   }
 ]

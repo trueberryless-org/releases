@@ -42,3 +42,6 @@ Thumbs.db
 
 # Changelog
 .changeset
+
+# Generated releases data
+src/data/releases.json

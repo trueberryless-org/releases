@@ -1,69 +1,44 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import { PROFILE } from "../libs/config";
+import { getLastReleaseDate, getRecentReleases } from "../libs/data";
+import { formatTimeAgo } from "../libs/time";
+
 import TheItem from "../components/TheItem.astro";
-import type { ReturnData } from "../types";
+import Layout from "../layouts/Layout.astro";
 
-// Fetch data at build time
-const data: ReturnData = await fetch(
-  `${import.meta.env.SITE || "http://localhost:4321"}/api/releases.json`
-)
-  .then((res) => res.json())
-  .catch(() => ({ infos: [], lastUpdated: 0, lastFetched: 0 }));
-
-const config = {
-  name: import.meta.env.PUBLIC_NAME || "trueberryless",
-  login: import.meta.env.PUBLIC_LOGIN || "trueberryless",
-};
-
-const list = data.infos;
-
-function formatTimeAgo(date: Date): string {
-  const now = new Date();
-  const diffInSeconds = Math.floor((now.getTime() - date.getTime()) / 1000);
-
-  if (diffInSeconds < 60) return "just now";
-  if (diffInSeconds < 3600)
-    return `${Math.floor(diffInSeconds / 60)} minutes ago`;
-  if (diffInSeconds < 86400)
-    return `${Math.floor(diffInSeconds / 3600)} hours ago`;
-  if (diffInSeconds < 2592000)
-    return `${Math.floor(diffInSeconds / 86400)} days ago`;
-  if (diffInSeconds < 31536000)
-    return `${Math.floor(diffInSeconds / 2592000)} months ago`;
-  return `${Math.floor(diffInSeconds / 31536000)} years ago`;
-}
+const profileUrl = `https://github.com/${PROFILE.login}`;
+const releases = getRecentReleases();
+const lastReleaseDate = getLastReleaseDate();
 ---
 
-<Layout title={`${config.name} is Releasing...`}>
+<Layout title={`${PROFILE.name} is Releasing...`}>
   <div class="container">
     <div class="header">
-      <h1>
-        <a
-          href={`https://github.com/${config.name}`}
-          target="_blank"
-          class="profile-link"
-        >
+      <div class="profile">
+        <a href={profileUrl} target="_blank" class="profile-link">
           <img
-            src={`https://github.com/${config.name}.png`}
-            alt={config.name}
+            src={`${profileUrl}.png?size=144`}
+            alt={PROFILE.name}
+            width="72"
+            height="72"
             class="avatar"
           />
         </a>
         <div class="title-wrapper">
-          <div class="title">
-            <a href={`https://github.com/${config.name}`} target="_blank">
-              {config.name}
+          <h1 class="title">
+            <a href={profileUrl} target="_blank">
+              {PROFILE.name}
             </a>
             <span> is </span>
             <span class="pulse">Releasing...</span>
-          </div>
+          </h1>
           <p class="subtitle">
-            <a href={`https://github.com/${config.login}`} target="_blank">
-              <span class="username">@{config.login}</span>'s profile on GitHub
+            <a href={profileUrl} target="_blank">
+              <span class="username">@{PROFILE.login}</span>'s profile on GitHub
             </a>
           </p>
         </div>
-      </h1>
+      </div>
 
       <div class="actions">
         <button id="dark-toggle" title="Toggle Dark Mode" class="action-btn">
@@ -117,43 +92,32 @@ function formatTimeAgo(date: Date): string {
       </div>
     </div>
 
-    {
-      list.length > 0 ? (
-        <>
-          {list.map((item, idx) => (
-            <TheItem item={item} prev={list[idx - 1]} config={config} />
-          ))}
-        </>
-      ) : (
-        <div class="no-releases">
-          <p>No releases found yet...</p>
-        </div>
-      )
-    }
+    {releases.length > 0 ? (
+      releases.map((release, index) => (
+        <TheItem previousRelease={releases[index - 1]} release={release} />
+      ))
+    ) : (
+      <div class="no-releases">
+        <p>No releases found yet...</p>
+      </div>
+    )}
 
     <div class="divider divider-top">
       <hr />
     </div>
 
     <div class="footer">
-      {
-        data.lastUpdated > 0 && (
-          <div class="footer-times">
-            <span class="label">Last activity:</span>
-            <time datetime={new Date(data.lastUpdated).toISOString()}>
-              {formatTimeAgo(new Date(data.lastUpdated))}
-            </time>
-            <span class="separator">|</span>
-            <span class="label">Last fetched:</span>
-            <time datetime={new Date(data.lastFetched).toISOString()}>
-              {formatTimeAgo(new Date(data.lastFetched))}
-            </time>
-          </div>
-        )
-      }
+      {lastReleaseDate && (
+        <div class="footer-times">
+          <span class="label">Last release:</span>
+          <time datetime={lastReleaseDate.toISOString()} data-relative-time>
+            {formatTimeAgo(lastReleaseDate)}
+          </time>
+        </div>
+      )}
       <p class="note">
-        GitHub API is not always realtime, it might take a couple hours to
-        update.
+        Releases are fetched from GitHub every 30 minutes, it might take a
+        little while for a new release to show up.
       </p>
     </div>
 
@@ -191,14 +155,12 @@ function formatTimeAgo(date: Date): string {
     gap: 1rem;
   }
 
-  h1 {
+  .profile {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    font-weight: 400;
   }
 
   .profile-link {
@@ -222,6 +184,8 @@ function formatTimeAgo(date: Date): string {
   }
 
   .title {
+    margin: 0;
+    font-weight: 400;
     font-size: 1.875rem;
     line-height: 1.2;
   }
@@ -330,11 +294,6 @@ function formatTimeAgo(date: Date): string {
 
   .footer .label {
     opacity: 0.75;
-  }
-
-  .separator {
-    margin: 0 0.5rem;
-    opacity: 0.5;
   }
 
   .note {
