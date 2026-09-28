@@ -46,7 +46,12 @@ const publishedAt = new Date(release.publishedAt);
           {GITHUB_ORGANIZATION}
           <span class="slash">/</span>
         </div>
-        <div class="name">{release.package}</div>
+        <div class="name">
+          {release.repository}
+          {release.package !== release.repository && (
+            <span class="package"> ({release.package})</span>
+          )}
+        </div>
       </a>
       <a
         href={release.url}
@@ -173,6 +178,11 @@ const publishedAt = new Date(release.publishedAt);
     margin-top: -0.125rem;
     font-size: 1.125rem;
     line-height: 1.5rem;
+  }
+
+  .package {
+    font-size: 0.875rem;
+    opacity: 0.5;
   }
 
   .commit {
