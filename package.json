@@ -1,5 +1,5 @@
 {
-  "name": "recent-releases",
+  "name": "@trueberryless-org/releases",
   "version": "0.0.0",
   "license": "MIT",
   "description": "A page listing the recent releases of the trueberryless-org GitHub organization.",
@@ -35,10 +35,10 @@
   "engines": {
     "node": ">=22.23.2"
   },
-  "homepage": "https://recent-releases.netlify.app",
+  "homepage": "https://releases.felixs.dev",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/trueberryless-org/recent-releases.git"
+    "url": "git+https://github.com/trueberryless-org/releases.git"
   },
-  "bugs": "https://github.com/trueberryless-org/recent-releases/issues"
+  "bugs": "https://github.com/trueberryless-org/releases/issues"
 }

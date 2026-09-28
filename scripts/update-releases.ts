@@ -23,5 +23,5 @@ const releases = getReleases(repositories, RELEASES_LIMIT);
 await writeFile(RELEASES_DATA_URL, serializeReleases(releases));
 
 console.info(
-  `[recent-releases] Saved ${releases.length} releases from ${repositories.length} repositories of the \`${GITHUB_ORGANIZATION}\` GitHub organization.`
+  `[releases] Saved ${releases.length} releases from ${repositories.length} repositories of the \`${GITHUB_ORGANIZATION}\` GitHub organization.`
 );
