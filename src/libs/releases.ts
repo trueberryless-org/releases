@@ -1,7 +1,12 @@
 import type { GitHubRelease, GitHubRepository } from "./github.ts";
 
-const RELEASE_TAG_RE =
-  /^(?:(?<name>.+)@)?v?(?<version>\d+\.\d+\.\d+(?:-[\w.]+)?)$/;
+const SEMVER_NUMBER = String.raw`(?:0|[1-9]\d*)`;
+const SEMVER_PRERELEASE_IDENTIFIER = String.raw`(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)`;
+const SEMVER_BUILD_IDENTIFIER = String.raw`[0-9a-zA-Z-]+`;
+const SEMVER = String.raw`${SEMVER_NUMBER}\.${SEMVER_NUMBER}\.${SEMVER_NUMBER}(?:-${SEMVER_PRERELEASE_IDENTIFIER}(?:\.${SEMVER_PRERELEASE_IDENTIFIER})*)?(?:\+${SEMVER_BUILD_IDENTIFIER}(?:\.${SEMVER_BUILD_IDENTIFIER})*)?`;
+const RELEASE_TAG_RE = new RegExp(
+  String.raw`^(?:(?<name>.+)@)?v?(?<version>${SEMVER})$`
+);
 const CHANGELOG_ENTRY_RE = /^[-*] +(?:.*?Thanks .*?! - )?(?<entry>.+)$/gm;
 const MARKDOWN_LINK_RE = /\[([^\]]*)\]\([^)]*\)/g;
 const MARKDOWN_EMPHASIS_RE = /\*\*|`/g;

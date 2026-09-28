@@ -32,6 +32,20 @@ describe("parseReleaseTag", () => {
     });
   });
 
+  test("parses prerelease and build metadata versions", () => {
+    expect(parseReleaseTag("v1.2.3-beta-1")?.version).toBe("1.2.3-beta-1");
+    expect(parseReleaseTag("v1.2.3+build.1")?.version).toBe("1.2.3+build.1");
+    expect(parseReleaseTag("foo@1.2.3-rc.0+sha.abc")?.version).toBe(
+      "1.2.3-rc.0+sha.abc"
+    );
+  });
+
+  test("ignores invalid semantic versions", () => {
+    expect(parseReleaseTag("v01.2.3")).toBeUndefined();
+    expect(parseReleaseTag("v1.2.3-beta..1")).toBeUndefined();
+    expect(parseReleaseTag("v1.2.3-01")).toBeUndefined();
+  });
+
   test("ignores tags without a semantic version", () => {
     expect(parseReleaseTag("v1")).toBeUndefined();
     expect(parseReleaseTag("main-f8984e0b6438136993d57aaf3e81a6fca7cbd99f")).toBeUndefined();
