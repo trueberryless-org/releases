@@ -22,12 +22,22 @@ jobs:
     name: Update releases
     runs-on: ubuntu-latest
     steps:
-      - name: Generate GitHub App token
+      - name: Generate GitHub App token to read the organization releases
+        id: generate_read_token
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
+        with:
+          app-id: ${{ secrets.BOT_APP_ID }}
+          private-key: ${{ secrets.BOT_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+          permission-contents: read
+
+      - name: Generate GitHub App token to push the releases data
         id: generate_token
         uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
         with:
           app-id: ${{ secrets.BOT_APP_ID }}
           private-key: ${{ secrets.BOT_PRIVATE_KEY }}
+          permission-contents: write
 
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
         with:
@@ -48,7 +58,7 @@ jobs:
       - name: Update releases
         run: pnpm update-releases
         env:
-          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
+          GITHUB_TOKEN: ${{ steps.generate_read_token.outputs.token }}
 
       - name: Commit updated releases
         env:
