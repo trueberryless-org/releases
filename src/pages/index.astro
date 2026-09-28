@@ -6,18 +6,19 @@ import { formatTimeAgo } from "../libs/time";
 import TheItem from "../components/TheItem.astro";
 import Layout from "../layouts/Layout.astro";
 
-const profileUrl = `https://github.com/${PROFILE.login}`;
+const profileUrl = PROFILE.website;
+const githubUrl = `https://github.com/${PROFILE.login}`;
 const releases = getRecentReleases();
 const lastReleaseDate = getLastReleaseDate();
 ---
 
-<Layout title={`${PROFILE.name} is Releasing...`}>
+<Layout title={`${PROFILE.name} is releasing...`}>
   <div class="container">
     <div class="header">
       <div class="profile">
         <a href={profileUrl} target="_blank" class="profile-link">
           <img
-            src={`${profileUrl}.png?size=144`}
+            src={`${githubUrl}.png?size=144`}
             alt={PROFILE.name}
             width="72"
             height="72"
@@ -30,10 +31,10 @@ const lastReleaseDate = getLastReleaseDate();
               {PROFILE.name}
             </a>
             <span> is </span>
-            <span class="pulse">Releasing...</span>
+            <span class="pulse">releasing...</span>
           </h1>
           <p class="subtitle">
-            <a href={profileUrl} target="_blank">
+            <a href={githubUrl} target="_blank">
               <span class="username">@{PROFILE.login}</span>'s profile on GitHub
             </a>
           </p>
