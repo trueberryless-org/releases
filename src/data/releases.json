@@ -1,5 +1,41 @@
 [
   {
+    "id": "RE_kwDON5ggOM4XzvrE",
+    "package": "starlight-group-pages",
+    "publishedAt": "2026-09-29T19:01:35Z",
+    "repository": "starlight-group-pages",
+    "summary": "Separates clickable sidebar group labels from their collapse toggle when using sidebarLink: \"label\". The label and the toggle now have their own hover and focus backgrounds, making it clearer that they trigger different actions.",
+    "url": "https://github.com/trueberryless-org/starlight-group-pages/releases/tag/starlight-group-pages%400.1.1",
+    "version": "0.1.1"
+  },
+  {
+    "id": "RE_kwDOMES_H84Xzi_n",
+    "package": "starlight-view-modes",
+    "publishedAt": "2026-09-29T17:48:05Z",
+    "repository": "starlight-view-modes",
+    "summary": "Fixes horizontal overflow in Zen Mode on browsers with classic, non-overlay scrollbars.",
+    "url": "https://github.com/trueberryless-org/starlight-view-modes/releases/tag/starlight-view-modes%400.15.3",
+    "version": "0.15.3"
+  },
+  {
+    "id": "RE_kwDOUysSX84XyvHv",
+    "package": "starlight-compass",
+    "publishedAt": "2026-09-29T13:28:21Z",
+    "repository": "starlight-compass",
+    "summary": "Initial public release with the diataxis rule, the typesafe provider, a dev toolbar app reviewing the current page, and opt-in audits for CI.",
+    "url": "https://github.com/trueberryless-org/starlight-compass/releases/tag/starlight-compass%400.1.0",
+    "version": "0.1.0"
+  },
+  {
+    "id": "RE_kwDOMES_H84XynRs",
+    "package": "starlight-view-modes",
+    "publishedAt": "2026-09-29T12:51:04Z",
+    "repository": "starlight-view-modes",
+    "summary": "Fixes Presentation Mode and view mode switching not working in development due to the picomatch dependency being loaded in the browser.",
+    "url": "https://github.com/trueberryless-org/starlight-view-modes/releases/tag/starlight-view-modes%400.15.2",
+    "version": "0.15.2"
+  },
+  {
     "id": "RE_kwDONKugD84Xup0m",
     "package": "astro-contributors",
     "publishedAt": "2026-09-28T09:28:00Z",
