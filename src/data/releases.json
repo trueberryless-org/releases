@@ -1,5 +1,14 @@
 [
   {
+    "id": "RE_kwDON5ggOM4X0CEr",
+    "package": "starlight-group-pages",
+    "publishedAt": "2026-09-29T20:47:04Z",
+    "repository": "starlight-group-pages",
+    "summary": "Adds a <GroupPageCards> component to render the link cards of a directory on any page, e.g. <GroupPageCards directory=\"guides\" />.",
+    "url": "https://github.com/trueberryless-org/starlight-group-pages/releases/tag/starlight-group-pages%400.2.0",
+    "version": "0.2.0"
+  },
+  {
     "id": "RE_kwDON5ggOM4XzvrE",
     "package": "starlight-group-pages",
     "publishedAt": "2026-09-29T19:01:35Z",
