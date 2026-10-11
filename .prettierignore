@@ -45,3 +45,5 @@ Thumbs.db
 
 # Generated releases data
 src/data/releases.json
+playwright-report/
+test-results/
