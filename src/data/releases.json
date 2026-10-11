@@ -1,5 +1,14 @@
 [
   {
+    "id": "RE_kwDONRUzM84Yavnc",
+    "package": "template-files",
+    "publishedAt": "2026-10-11T12:51:16Z",
+    "repository": "template-files",
+    "summary": "Adds a “Merge sync pull requests” workflow that merges every open sync pull request with no conflicts and no failing or running checks (with a dry run option), and a “Sync one repository” workflow to re-run the sync for a single repository, for example after a merge conflict. The release notes link to both workflows.",
+    "url": "https://github.com/trueberryless-org/template-files/releases/tag/template-files%400.17.0",
+    "version": "0.17.0"
+  },
+  {
     "id": "RE_kwDON5ggOM4X0CEr",
     "package": "starlight-group-pages",
     "publishedAt": "2026-09-29T20:47:04Z",
