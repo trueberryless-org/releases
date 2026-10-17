@@ -1,4 +1,9 @@
+import { setTimeout } from "node:timers/promises";
+
 const GITHUB_GRAPHQL_URL = "https://api.github.com/graphql";
+
+const GITHUB_QUERY_MAX_ATTEMPTS = 4;
+const GITHUB_QUERY_RETRY_DELAY_MS = 2000;
 
 const RELEASES_FIELDS = `
   releases(first: 100, after: $releasesCursor, orderBy: { field: CREATED_AT, direction: DESC }) {
@@ -24,7 +29,7 @@ const RELEASES_FIELDS = `
 const REPOSITORIES_QUERY = `
   query ($cursor: String, $organization: String!, $releasesCursor: String) {
     organization(login: $organization) {
-      repositories(first: 50, after: $cursor, isFork: false, privacy: PUBLIC) {
+      repositories(first: 20, after: $cursor, isFork: false, privacy: PUBLIC) {
         pageInfo {
           endCursor
           hasNextPage
@@ -120,14 +125,7 @@ async function queryGitHub<T>(
   variables: Record<string, unknown>,
   token: string
 ): Promise<T> {
-  const response = await fetch(GITHUB_GRAPHQL_URL, {
-    body: JSON.stringify({ query, variables }),
-    headers: {
-      Authorization: `Bearer ${token}`,
-      "Content-Type": "application/json",
-    },
-    method: "POST",
-  });
+  const response = await fetchGitHub(query, variables, token);
 
   if (!response.ok) {
     throw new Error(
@@ -143,6 +141,35 @@ async function queryGitHub<T>(
   }
 
   return data;
+}
+
+async function fetchGitHub(
+  query: string,
+  variables: Record<string, unknown>,
+  token: string
+): Promise<Response> {
+  for (let attempt = 1; ; attempt++) {
+    const response = await fetch(GITHUB_GRAPHQL_URL, {
+      body: JSON.stringify({ query, variables }),
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+    });
+
+    if (response.status < 500 || attempt >= GITHUB_QUERY_MAX_ATTEMPTS) {
+      return response;
+    }
+
+    const delay = GITHUB_QUERY_RETRY_DELAY_MS * 2 ** (attempt - 1);
+
+    console.warn(
+      `[releases] The GitHub GraphQL API responded with ${response.status} ${response.statusText}, retrying in ${delay / 1000}s (attempt ${attempt}/${GITHUB_QUERY_MAX_ATTEMPTS}).`
+    );
+
+    await setTimeout(delay);
+  }
 }
 
 export interface GitHubRepository {
